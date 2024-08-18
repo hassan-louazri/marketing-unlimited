@@ -1,18 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeroComponent } from './hero/hero.component';
+import { OfferComponent } from './offer/offer.component';
 
 
 
 @NgModule({
   declarations: [
-    HeroComponent
+    HeroComponent,
+    OfferComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    HeroComponent
+    HeroComponent,
+    OfferComponent
   ]
 })
 export class LandingModule { }

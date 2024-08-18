@@ -1,0 +1,15 @@
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto; /* Adjust the height as needed */
+    background-color: #4169E1; /* Light background color */
+    text-align: center;
+    flex-direction: column;
+}
+
+.head-text {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: #fff;
+}
