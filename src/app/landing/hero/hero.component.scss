@@ -17,9 +17,11 @@
         height: 100%;
         object-fit: cover;
         z-index: 1;
+        filter: brightness(50%);
     }
 
     .hero-content {
+        padding: 22px;
         position: relative;
         z-index: 2;
         max-width: 80%;
