@@ -1,0 +1,50 @@
+{
+    "HEADER": {
+        "HOME": "Accueil",
+        "BLOG": "Blog",
+        "CONTACT_BUTTON": "Contacter Nous"
+    },
+    "FOOTER": {
+        "RIGHTS": "2024 Marketing Unlimited. Tous droits réservés."
+    },
+    "HERO": {
+        "HEADLINE": {
+            "ONE": "Recevez Plus De Clients",
+            "TWO": "Gagnez Plus d'Argent",
+            "THREE": "Garantie"
+        },
+        "SUBHEAD": {
+            "ONE": "Receive professional marketing services from our local agency.",
+            "TWO": "Whether you want to sell a product, a service or improve your business's turnover,",
+            "THREE": "we will create a tailor-made advertising strategy that guarantees results for you."
+        },
+        "HERO_BUTTON": "Get Started Now"
+    },
+    "OFFER": {
+        "HEAD": {
+            "TEXT_ONE": "Marketing is important...",
+            "TEXT_TWO": "…But you have more on your plate than you know what to do with.",
+            "TEXT_THREE": "That's why we're here.",
+            "TEXT_FOUR": "Our job is to help you launch your product or service into the market in the best way possible."
+        },
+        "TITLE": "What We Offer",
+        "CARDS": {
+            "ONE": {
+                "TITLE": "More Free Time",
+                "TEXT": "Our job is to take all the marketing work off your plate. You won't have to worry about selling, advertising or creating content anymore. We'll handle all of it for you."
+            },
+            "TWO": {
+                "TITLE": "More Conversions",
+                "TEXT": "We will curate a strategy focused on getting more clients for your business. This will help you increase your sales and improve your business in an amazing way."
+            },
+            "THREE": {
+                "TITLE": "Professional Team",
+                "TEXT": "You will have a team of specialized marketeers at your service. Our extensive experience makes us able to find the perfect client for you. EVERYTIME."
+            },
+            "FOUR": {
+                "TITLE": "Local Agency",
+                "TEXT": "We're not tucked away in some anonymous call center. You will always have access to us whenever you need."
+            }
+        }
+    }
+}

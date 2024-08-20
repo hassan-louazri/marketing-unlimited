@@ -1,25 +1,34 @@
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark shadow-lg">
-        <div class="container">
-            <a class="navbar-brand ml-auto" [routerLink]="'.'">MARKETING<br/>UNLIMITED</a>
-            <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" [ngbCollapse]="isMenuCollapsed" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                </ul>
-              
-                <a class="btn-custom my-2" type="submit">Contact Us</a>
-            </div>
-        </div>
-      </nav>      
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-lg">
+    <div class="container">
+      <a class="navbar-brand ml-auto" [routerLink]="'.'"
+        >MARKETING<br />UNLIMITED</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        (click)="isMenuCollapsed = !isMenuCollapsed"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse"
+        [ngbCollapse]="isMenuCollapsed"
+        id="navbarNav"
+      >
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">{{ "HEADER.HOME" | translate }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">{{ "HEADER.BLOG" | translate }}</a>
+          </li>
+        </ul>
+
+        <a class="btn-custom my-2" type="submit">{{
+          "HEADER.CONTACT_BUTTON" | translate
+        }}</a>
+      </div>
+    </div>
+  </nav>
 </header>

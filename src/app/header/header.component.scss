@@ -1,36 +1,35 @@
 .navbar {
-    background-color: #4169E1;
+  background-color: #4169e1;
 }
 
 .navbar-brand {
-    font-size: 28px;
-    font-weight: 800;
-    -webkit-text-stroke: 0.04rem black;
-    line-height: 80%;
-    font-family: sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  -webkit-text-stroke: 0.04rem black;
+  line-height: 80%;
+  font-family: sans-serif;
 }
 
 .nav-link {
-    color: #fee;
+  color: #fee;
 }
 
 .nav-link:hover {
-    color: #fff;
-    text-decoration: underline;
-    text-underline-offset: 0.2rem;
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
 }
 
 .btn-custom {
-    color: #fff;
-    text-decoration: none;
-    display: block;
+  color: #fff;
+  text-decoration: none;
+  display: block;
 }
 .btn-custom:hover {
-    text-decoration: underline;
- 
+  text-decoration: underline;
 }
 @media (max-width: 768px) {
-    .nav-item{
-        margin: 0;
-    }
+  .nav-item {
+    margin: 0;
+  }
 }

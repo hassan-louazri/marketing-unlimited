@@ -1,61 +1,67 @@
 $font-radius: 32px;
 .head {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: auto; /* Adjust the height as needed */
-    background-color: #4169E1; /* Light background color */
-    text-align: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto; /* Adjust the height as needed */
+  background-color: #4169e1; /* Light background color */
+  text-align: center;
+  flex-direction: column;
 }
 
 .head-text {
-    font-size: 1.5rem;
-    font-weight: normal;
-    color: #fff;
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: #fff;
 }
-.card-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.card-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 28px;
 }
-.offer-card {   
-    border-radius: $font-radius;
-    flex-direction: row;
-    margin-bottom: 32px;
-    overflow: hidden;
+
+.card-body img {
+    width: 50px;
+    margin: 12px;
 }
-.card-img-holder{
-    display: block;
-    width: 50%;
+.offer-card {
+  border-radius: $font-radius;
+  flex-direction: row;
+  margin-bottom: 32px;
+  overflow: hidden;
 }
-.card-img-holder img{
-    width: -moz-available;
+.card-img-holder {
+  display: block;
+  width: 50%;
 }
-.offer-card .card-img-holder img{   
-    border-radius: $font-radius 0 0 $font-radius;
-    display: block;
+.card-img-holder img {
+  width: -moz-available;
+}
+.offer-card .card-img-holder img {
+  border-radius: $font-radius 0 0 $font-radius;
+  display: block;
 }
 .offer-card:nth-child(even) {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 .offer-card:nth-child(even) .card-img-holder img {
-    border-radius: 0 $font-radius $font-radius 0;
+  border-radius: 0 $font-radius $font-radius 0;
 }
 @media (max-width: 768px) {
-    .offer-card{
-        flex-direction: column;
-    }
-    .offer-card:nth-child(even) {
-        flex-direction: column;
-    }
-    .card-img-holder{
-        width: 100%;
-    }
-    .offer-card .card-img-holder img{   
-        border-radius: $font-radius $font-radius 0 0;
-    }
-    .offer-card:nth-child(even) .card-img-holder img {
-        border-radius:  $font-radius $font-radius 0 0;
-    }
+  .offer-card {
+    flex-direction: column;
+  }
+  .offer-card:nth-child(even) {
+    flex-direction: column;
+  }
+  .card-img-holder {
+    width: 100%;
+  }
+  .offer-card .card-img-holder img {
+    border-radius: $font-radius $font-radius 0 0;
+  }
+  .offer-card:nth-child(even) .card-img-holder img {
+    border-radius: $font-radius $font-radius 0 0;
+  }
 }
