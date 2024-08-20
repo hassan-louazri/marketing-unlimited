@@ -1,3 +1,4 @@
+$font-radius: 32px;
 .head {
     display: flex;
     align-items: center;
@@ -13,7 +14,37 @@
     font-weight: normal;
     color: #fff;
 }
-
+.card-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .offer-card {   
+    border-radius: $font-radius;
     flex-direction: row;
+    margin-bottom: 32px;
+}
+
+.offer-card img{   
+    border-radius: $font-radius 0 0 $font-radius;
+}
+.offer-card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.offer-card:nth-child(even) img {
+    border-radius: 0 $font-radius $font-radius 0;
+}
+@media (max-width: 768px) {
+    .offer-card{
+        flex-direction: column;
+    }
+    .offer-card:nth-child(even) {
+        flex-direction: column;
+    }
+    .offer-card img{   
+        border-radius: $font-radius $font-radius 0 0;
+    }
+    .offer-card:nth-child(even) img {
+        border-radius:  $font-radius $font-radius 0 0;
+    }
 }
