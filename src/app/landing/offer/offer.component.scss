@@ -49,6 +49,9 @@ $font-radius: 32px;
     .offer-card:nth-child(even) {
         flex-direction: column;
     }
+    .card-img-holder{
+        width: 100%;
+    }
     .offer-card .card-img-holder img{   
         border-radius: $font-radius $font-radius 0 0;
     }
