@@ -22,4 +22,15 @@
 
 .btn-custom {
     color: #fff;
+    text-decoration: none;
+    display: block;
+}
+.btn-custom:hover {
+    text-decoration: underline;
+ 
+}
+@media (max-width: 768px) {
+    .nav-item{
+        margin: 0;
+    }
 }
