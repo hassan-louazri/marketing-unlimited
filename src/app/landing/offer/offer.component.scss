@@ -23,15 +23,23 @@ $font-radius: 32px;
     border-radius: $font-radius;
     flex-direction: row;
     margin-bottom: 32px;
+    overflow: hidden;
 }
-
-.offer-card img{   
+.card-img-holder{
+    display: block;
+    width: 50%;
+}
+.card-img-holder img{
+    width: -moz-available;
+}
+.offer-card .card-img-holder img{   
     border-radius: $font-radius 0 0 $font-radius;
+    display: block;
 }
 .offer-card:nth-child(even) {
     flex-direction: row-reverse;
 }
-.offer-card:nth-child(even) img {
+.offer-card:nth-child(even) .card-img-holder img {
     border-radius: 0 $font-radius $font-radius 0;
 }
 @media (max-width: 768px) {
@@ -41,10 +49,10 @@ $font-radius: 32px;
     .offer-card:nth-child(even) {
         flex-direction: column;
     }
-    .offer-card img{   
+    .offer-card .card-img-holder img{   
         border-radius: $font-radius $font-radius 0 0;
     }
-    .offer-card:nth-child(even) img {
+    .offer-card:nth-child(even) .card-img-holder img {
         border-radius:  $font-radius $font-radius 0 0;
     }
 }
