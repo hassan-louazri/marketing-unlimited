@@ -5,6 +5,7 @@ import { OfferComponent } from './offer/offer.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateModule } from '@ngx-translate/core';
+import { ChoiceComponent } from './choice/choice.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -13,7 +14,8 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [
     HeroComponent,
-    OfferComponent
+    OfferComponent,
+    ChoiceComponent
   ],
   imports: [
     CommonModule,
@@ -22,7 +24,8 @@ export function HttpLoaderFactory(http: HttpClient) {
   ],
   exports: [
     HeroComponent,
-    OfferComponent
+    OfferComponent,
+    ChoiceComponent
   ]
 })
 export class LandingModule { }
