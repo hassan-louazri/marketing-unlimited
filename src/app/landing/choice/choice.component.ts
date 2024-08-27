@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./choice.component.scss']
 })
 export class ChoiceComponent {
-  cards = [
+  cards = [// ADD 'ENGLISH VERSION' + 'FR VERSION'
     {
       icon: '../../../assets/icons/clock.svg',
       title: 'Do it yourself?',
