@@ -11,39 +11,39 @@
         "HEADLINE": {
             "ONE": "Recevez Plus De Clients",
             "TWO": "Gagnez Plus d'Argent",
-            "THREE": "Garantie"
+            "THREE": "Garanti"
         },
         "SUBHEAD": {
-            "ONE": "Receive professional marketing services from our local agency.",
-            "TWO": "Whether you want to sell a product, a service or improve your business's turnover,",
-            "THREE": "we will create a tailor-made advertising strategy that guarantees results for you."
+            "ONE": "Bénéficiez des services professionnels de marketing offerts par notre agence locale.",
+            "TWO": "Que vous souhaitiez vendre un produit, un service ou améliorer le chiffre d'affaires de votre entreprise,",
+            "THREE": "nous créons une stratégie publicitaire sur mesure qui vous garantit des résultats."
         },
-        "HERO_BUTTON": "Get Started Now"
+        "HERO_BUTTON": "Commencer maintenant"
     },
     "OFFER": {
         "HEAD": {
-            "TEXT_ONE": "Marketing is important...",
-            "TEXT_TWO": "…But you have more on your plate than you know what to do with.",
-            "TEXT_THREE": "That's why we're here.",
-            "TEXT_FOUR": "Our job is to help you launch your product or service into the market in the best way possible."
+            "TEXT_ONE": "Le marketing est important...",
+            "TEXT_TWO": "…Mais vous avez plus de choses à gérer que vous ne pouvez en faire.",
+            "TEXT_THREE": "C'est pour cela nous existons.",
+            "TEXT_FOUR": "Notre travail consiste à vous aider à lancer votre produit ou service sur le marché de la meilleure façon possible."
         },
-        "TITLE": "What We Offer",
+        "TITLE": "Ce que nous offrons",
         "CARDS": {
             "ONE": {
-                "TITLE": "More Free Time",
-                "TEXT": "Our job is to take all the marketing work off your plate. You won't have to worry about selling, advertising or creating content anymore. We'll handle all of it for you."
+                "TITLE": "Plus de Temps Libre",
+                "TEXT": "Notre mission est de vous décharger de tout le travail de marketing. Vous n'aurez plus à vous soucier de la vente, de la publicité ou de la création de contenu. Nous nous occupons de tout pour vous."
             },
             "TWO": {
-                "TITLE": "More Conversions",
-                "TEXT": "We will curate a strategy focused on getting more clients for your business. This will help you increase your sales and improve your business in an amazing way."
+                "TITLE": "Plus de Clients",
+                "TEXT": "Nous élaborerons une stratégie focalisée sur l'obtention d'un plus grand nombre de clients pour votre entreprise."
             },
             "THREE": {
-                "TITLE": "Professional Team",
-                "TEXT": "You will have a team of specialized marketeers at your service. Our extensive experience makes us able to find the perfect client for you. EVERYTIME."
+                "TITLE": "Équipe Professionelle",
+                "TEXT": "Vous disposerez d'une équipe de spécialistes du marketing à votre service. Notre expertise nous permet de trouver le client idéal pour vous. À CHAQUE FOIS."
             },
             "FOUR": {
-                "TITLE": "Local Agency",
-                "TEXT": "We're not tucked away in some anonymous call center. You will always have access to us whenever you need."
+                "TITLE": "Agence Locale",
+                "TEXT": "Nous ne sommes pas cachés dans un centre d'appel anonyme. Vous aurez toujours accès à nous quand vous en aurez besoin."
             }
         }
     }
