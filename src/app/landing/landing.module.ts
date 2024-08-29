@@ -6,6 +6,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateModule } from '@ngx-translate/core';
 import { ChoiceComponent } from './choice/choice.component';
+import { ContactComponent } from './contact/contact.component';
+import { FormsModule } from '@angular/forms';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -15,17 +17,20 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [
     HeroComponent,
     OfferComponent,
-    ChoiceComponent
+    ChoiceComponent,
+    ContactComponent
   ],
   imports: [
     CommonModule,
     HttpClientModule,
-    TranslateModule
+    TranslateModule,
+    FormsModule
   ],
   exports: [
     HeroComponent,
     OfferComponent,
-    ChoiceComponent
+    ChoiceComponent,
+    ContactComponent
   ]
 })
 export class LandingModule { }

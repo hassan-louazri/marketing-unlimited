@@ -1,7 +1,7 @@
 <header>
   <nav class="navbar navbar-expand-lg navbar-dark shadow-lg">
     <div class="container">
-      <a class="navbar-brand ml-auto" [routerLink]="'.'"
+      <a class="navbar-brand ml-auto"
         >MARKETING<br />UNLIMITED</a
       >
       <button
@@ -25,9 +25,20 @@
           </li>
         </ul>
 
-        <a class="btn-custom my-2" type="submit">{{
-          "HEADER.CONTACT_BUTTON" | translate
-        }}</a>
+        <div ngbDropdown class="d-inline-block">
+          <button type="button" class="btn" id="language-dropdown" ngbDropdownToggle>
+            Language
+          </button>
+          <div ngbDropdownMenu aria-labelledby="language-dropdown">
+            <button ngbDropdownItem (click)='switchLanguage("en")'>English</button>
+            <button ngbDropdownItem (click)='switchLanguage("fr")'>French</button>
+          </div>
+        </div>
+       
+
+        <a class="btn-custom my-2" type="submit">
+          {{ "HEADER.CONTACT_BUTTON" | translate }}
+        </a>
       </div>
     </div>
   </nav>

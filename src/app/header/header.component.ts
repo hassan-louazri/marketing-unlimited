@@ -10,7 +10,7 @@ export class HeaderComponent {
   isMenuCollapsed: boolean = true;
 
   constructor(private translate: TranslateService) {
-    this.translate.setDefaultLang("fr");
+    this.translate.setDefaultLang("en");
   }
 
   switchLanguage(lang: string) {
