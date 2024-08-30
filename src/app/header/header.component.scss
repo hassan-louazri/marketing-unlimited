@@ -19,7 +19,9 @@
   text-decoration: underline;
   text-underline-offset: 0.2rem;
 }
-
+.mr-25{
+  margin-right: 25px;
+}
 .btn-custom {
   color: #fff;
   text-decoration: none;
@@ -28,8 +30,14 @@
 .btn-custom:hover {
   text-decoration: underline;
 }
+.cursor-pointer{
+  cursor: pointer;
+}
 @media (max-width: 768px) {
   .nav-item {
     margin: 0;
+  }
+  .mr-25{
+    margin-right: 0;
   }
 }

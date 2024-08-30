@@ -15,18 +15,18 @@
           </li>
         </ul>
 
-        <div ngbDropdown class="d-inline-block">
-          <button type="button" class="btn" id="language-dropdown" ngbDropdownToggle>
+        <div ngbDropdown class="d-inline-block nav-item mr-25">
+          <a class="nav-link cursor-pointer" id="language-dropdown" ngbDropdownToggle>
             {{ "HEADER.DROPDOWN" | translate }}
-          </button>
+          </a>
           <div ngbDropdownMenu aria-labelledby="language-dropdown">
-            <button ngbDropdownItem (click)='switchLanguage("en")'>{{ "HEADER.ENGLISH" | translate }}</button>
-            <button ngbDropdownItem (click)='switchLanguage("fr")'>{{ "HEADER.FRENCH" | translate }}</button>
+            <button ngbDropdownItem (click)='switchLanguage("en")'> <span *ngIf="selectedLanguage === 'en'">( * )</span> {{ "HEADER.ENGLISH" | translate }}</button>
+            <button ngbDropdownItem (click)='switchLanguage("fr")'> <span *ngIf="selectedLanguage === 'fr'">( * )</span> {{ "HEADER.FRENCH" | translate }}</button>
           </div>
         </div>
 
 
-        <a class="btn-custom my-2" type="submit">
+        <a class="btn-custom my-2" (click)="scrollToElement('contact-form')" type="submit">
           {{ "HEADER.CONTACT_BUTTON" | translate }}
         </a>
       </div>
