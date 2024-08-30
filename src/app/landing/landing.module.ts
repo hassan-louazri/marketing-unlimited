@@ -8,6 +8,8 @@ import { TranslateModule } from '@ngx-translate/core';
 import { ChoiceComponent } from './choice/choice.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule } from '@angular/forms';
+import { HomepageComponent } from './homepage/homepage.component';
+import { LandingRoutingModule } from './landing-routing.module';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -18,19 +20,15 @@ export function HttpLoaderFactory(http: HttpClient) {
     HeroComponent,
     OfferComponent,
     ChoiceComponent,
-    ContactComponent
+    ContactComponent,
+    HomepageComponent
   ],
   imports: [
     CommonModule,
+    LandingRoutingModule,
     HttpClientModule,
     TranslateModule,
     FormsModule
-  ],
-  exports: [
-    HeroComponent,
-    OfferComponent,
-    ChoiceComponent,
-    ContactComponent
   ]
 })
 export class LandingModule { }
