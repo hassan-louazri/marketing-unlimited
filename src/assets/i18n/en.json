@@ -2,6 +2,9 @@
     "HEADER": {
         "HOME": "Home",
         "BLOG": "Blog",
+        "DROPDOWN": "Language",
+        "ENGLISH": "English",
+        "FRENCH": "French",
         "CONTACT_BUTTON": "Contact Us"
     },
     "FOOTER": {
@@ -45,6 +48,43 @@
                 "TITLE": "Local Agency",
                 "TEXT": "We're not tucked away in some anonymous call center. You will always have access to us whenever you need."
             }
+        }
+    },
+    "CHOICE": {
+        "TITLE": "Why Choose Us?",
+        "CARDS": {
+            "ONE": {
+                "TITLE": "Do it yourself?",
+                "TEXT": "No problem if you have little to do. However, if you're busy… I don't think that's feasible."
+            },
+            "TWO": {
+                "TITLE": "Hire new staff?",
+                "TEXT": "Finding good people is not an obvious task. Training them is also expensive. And even if you find the perfect person, you still rely on one individual."
+            },
+            "THREE": {
+                "TITLE": "Hire an agency?",
+                "TEXT": "Don't have a marketing budget of tens of thousands of euros per month? Then your account is probably going to be managed by the intern of the assistant of the assistant. Not ideal."
+            }
+        }
+    },
+    "CONTACT": {
+        "TITLE": "Contact Us",
+        "ONE": "Curious about how we would approach marketing for your business? Then do this:",
+        "TWO": "Get in touch with our agency today.",
+        "THREE": "If we're a good fit, we will take a look at your company, come up with a strategy and discuss it with you in depth on a call.",
+        "FOUR": "No costs, No obligations.",
+        "FIVE": "Then, if you want us to work together, I'll tell you exactly how that works.",
+        "SIX": "If not, that's fine too. No hard selling, no annoying sales tactics.",
+        "SEVEN": "Sounds good?",
+        "EIGHT": "Fill this form then: ",
+        "FORM": {
+            "FULLNAME": "Full name",
+            "EMAIL": "Email",
+            "COMPANY": "Company name",
+            "PHONE": "Phone number",
+            "SUBJECT": "What is your most important question?",
+            "MESSAGE": "Message",
+            "SUBMIT": "Submit"
         }
     }
 }

@@ -1,3 +1,4 @@
+import { TranslationService } from './core/translation.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'marketing-unlimited';
+  constructor(private translation: TranslationService) {}
+
+  ngOnInit() {
+    const lang = this.translation.getLanguage();
+    this.translation.setLanguage(lang);
+  }
 }

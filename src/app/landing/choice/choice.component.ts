@@ -9,18 +9,18 @@ export class ChoiceComponent {
   cards = [// ADD 'ENGLISH VERSION' + 'FR VERSION'
     {
       icon: '../../../assets/icons/clock.svg',
-      title: 'Do it yourself?',
-      text: "No problem if you have little to do. However, if you're busy… I don't think that's feasible."
+      title: 'CHOICE.CARDS.ONE.TITLE',
+      text: 'CHOICE.CARDS.ONE.TEXT'
     },
     {
       icon: '../../../assets/icons/clock.svg',
-      title: 'Hire new staff?',
-      text: "Finding good people is not an obvious task. Training them is also expensive. And even if you find the perfect person, you still rely on one individual."
+      title: 'CHOICE.CARDS.TWO.TITLE',
+      text: 'CHOICE.CARDS.TWO.TEXT'
     },
     {
       icon: '../../../assets/icons/clock.svg',
-      title: 'Hire an agency?',
-      text: "Don't have a marketing budget of tens of thousands of euros per month? Then your account is probably going to be managed by the intern of the assistant of the assistant. Not ideal."
+      title: 'CHOICE.CARDS.THREE.TITLE',
+      text: 'CHOICE.CARDS.THREE.TEXT'
     }
   ]
 }

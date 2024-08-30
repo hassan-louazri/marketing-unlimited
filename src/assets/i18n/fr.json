@@ -2,6 +2,9 @@
     "HEADER": {
         "HOME": "Accueil",
         "BLOG": "Blog",
+        "DROPDOWN": "Langue",
+        "ENGLISH": "Anglais",
+        "FRENCH": "Français",
         "CONTACT_BUTTON": "Contacter Nous"
     },
     "FOOTER": {
@@ -45,6 +48,43 @@
                 "TITLE": "Agence Locale",
                 "TEXT": "Nous ne sommes pas cachés dans un centre d'appel anonyme. Vous aurez toujours accès à nous quand vous en aurez besoin."
             }
+        }
+    },
+    "CHOICE": {
+        "TITLE": "Pourquoi nous?",
+        "CARDS": {
+            "ONE": {
+                "TITLE": "Le faire vous-même ?",
+                "TEXT": "Pas de problème si vous n'avez pas grand-chose à faire. Cependant, si vous êtes déjà occupé... je ne pense pas que ce soit faisable."
+            },
+            "TWO": {
+                "TITLE": "Embaucher des collaborateurs ?",
+                "TEXT": "Il n'est pas évident de trouver des personnes compétentes. Les former est également coûteux. Et même si vous trouvez la personne idéale, vous dépendez toujours d'un seul individu."
+            },
+            "THREE": {
+                "TITLE": "Recourir à une agence ?",
+                "TEXT": "Vous ne disposez pas d'un budget marketing de plusieurs dizaines de milliers d'euros par mois ? Dans ce cas, votre compte sera probablement géré par le stagiaire de l'assistant de l'assistant. Pas idéal."
+            }
+        }
+    },
+    "CONTACT": {
+        "TITLE": "Contacter nous",
+        "ONE": "Curieux de savoir comment nous aborderions le marketing pour votre entreprise? Alors faites ceci :",
+        "TWO": "Prenez contact avec notre agence dès aujourd'hui.",
+        "THREE": "Si nous sommes compatibles, nous examinerons votre entreprise, élaborerons une stratégie et en discuterons en profondeur avec vous lors d'un appel.",
+        "FOUR": "Aucun coût, aucune obligation.",
+        "FIVE": "Ensuite, si vous voulez que nous travaillions ensemble, je vous dirai exactement comment cela fonctionne.",
+        "SIX": "Si ce n'est pas le cas, ce n'est pas grave non plus. Pas de vente forcée, pas de tactiques de vente ennuyeuses.",
+        "SEVEN": "Ça vous va ?",
+        "EIGHT": "Remplissez alors ce formulaire :",
+        "FORM": {
+            "FULLNAME": "Nome complet",
+            "EMAIL": "Courriel",
+            "COMPANY": "Nom d'entreprise",
+            "PHONE": "Téléphone",
+            "SUBJECT": "Quelle est votre question la plus importante ?",
+            "MESSAGE": "Message",
+            "SUBMIT": "Soumettre"
         }
     }
 }

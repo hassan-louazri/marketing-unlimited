@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslationService } from '../core/translation.service';
 
 @Component({
   selector: 'app-header',
@@ -9,11 +9,9 @@ import { TranslateService } from '@ngx-translate/core';
 export class HeaderComponent {
   isMenuCollapsed: boolean = true;
 
-  constructor(private translate: TranslateService) {
-    this.translate.setDefaultLang("en");
-  }
+  constructor(private translationService: TranslationService) {}
 
   switchLanguage(lang: string) {
-    this.translate.use(lang);
+    this.translationService.setLanguage(lang);
   }
 }

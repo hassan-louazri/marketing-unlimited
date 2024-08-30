@@ -17,11 +17,11 @@
 
         <div ngbDropdown class="d-inline-block">
           <button type="button" class="btn" id="language-dropdown" ngbDropdownToggle>
-            Language
+            {{ "HEADER.DROPDOWN" | translate }}
           </button>
           <div ngbDropdownMenu aria-labelledby="language-dropdown">
-            <button ngbDropdownItem (click)='switchLanguage("en")'>English</button>
-            <button ngbDropdownItem (click)='switchLanguage("fr")'>French</button>
+            <button ngbDropdownItem (click)='switchLanguage("en")'>{{ "HEADER.ENGLISH" | translate }}</button>
+            <button ngbDropdownItem (click)='switchLanguage("fr")'>{{ "HEADER.FRENCH" | translate }}</button>
           </div>
         </div>
 
