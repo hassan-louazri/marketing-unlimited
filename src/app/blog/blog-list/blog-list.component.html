@@ -1,1 +1,20 @@
-<p>blog-list works!</p>
+<div class="container mt-5">
+    <div class="title text-center">
+        <h1>Our Articles</h1>
+    </div>
+    <div class="subtitle text-center">
+        <p>We write these articles to help business owners improve their marketing and get the most out of their digital advertising.</p>
+    </div>
+    <div class="row">
+        <div class="col-md-4 mb-4" *ngFor="let blog of blogs">
+            <div class="card h-100 text-center">
+                <img [src]="blog.image" class="card-img-top" alt="{{ blog.title }} image">
+                <div class="card-body">
+                    <h5 class="card-title">{{ blog.title }}</h5>
+                    <p class="card-text">{{ blog.description }}</p>
+                    <button class="btn btn-primary" (click)="onCardClick()">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
