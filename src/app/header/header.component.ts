@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { TranslationService } from '../core/translation.service';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -9,8 +8,9 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent {
   isMenuCollapsed: boolean = true;
-  selectedLanguage: string = 'en'; // Hadi RIGLHA BDAKCHI D LOCALSTORAGE OU L3IBAT
-  constructor(private translationService: TranslationService,  private router:Router) {}
+  selectedLanguage: string | undefined;
+
+  constructor(private translationService: TranslationService) {}
 
   switchLanguage(lang: string) {
     this.translationService.setLanguage(lang);
