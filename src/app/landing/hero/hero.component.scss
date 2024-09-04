@@ -62,13 +62,16 @@
 
   @media (max-width: 768px) {
     height: 80vh;
-
+    .hero-content{
+      padding: 0;
+    }
     .headline {
-      font-size: 2rem;
+      font-size: 1.3rem;
     }
 
     .subheadline {
       font-size: 1rem;
+      padding: 0;
     }
 
     .hero-button {

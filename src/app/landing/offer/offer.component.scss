@@ -9,7 +9,9 @@ $font-radius: 32px;
   padding: 0 80px 80px 80px;
   flex-direction: column;
 }
-
+.responsive-margin{
+  margin-top: 30px;
+}
 .head-text {
   font-size: 1.5rem;
   font-weight: normal;
@@ -48,6 +50,12 @@ $font-radius: 32px;
   border-radius: 0 $font-radius $font-radius 0;
 }
 @media (max-width: 992px) {
+  .head{
+    padding: 0;
+  }
+  .responsive-margin{
+    margin-top: 12px;
+  }
   .offer-card {
     flex-direction: column;
   }
