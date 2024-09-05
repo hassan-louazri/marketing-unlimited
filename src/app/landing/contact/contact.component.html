@@ -2,8 +2,8 @@
     <h2 class="text-center my-5">{{ 'CONTACT.TITLE' | translate }}</h2>
 
     <form #contactForm="ngForm" class="my-5 d-flex justify-content-center" (ngSubmit)="onSubmit(contactForm)">
-        <div class="card p-3 rounded-3 width-540">
-            <div class="card-body  rounded-3">
+        <div class="card custom-radius width-540">
+            <div class="card-body  custom-radius-top-leftandright ">
                 <p>{{ 'CONTACT.ONE' | translate }}</p>
                 <p>{{ 'CONTACT.TWO' | translate }}</p>
                 <p>{{ 'CONTACT.THREE' | translate }}</p>
@@ -14,7 +14,7 @@
                 <p>{{ 'CONTACT.EIGHT' | translate }}</p>
 
             </div>
-            <div class="d-block mt-2">
+            <div class="d-block mt-2 mx-3">
                 <div class="form-group">
                     <label for="name">{{ 'CONTACT.FORM.FULLNAME' | translate }}</label>
                     <input type="text" id="name" name="name" class="form-control" ngModel>

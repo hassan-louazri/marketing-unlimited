@@ -1,6 +1,15 @@
+$gray-color: #f0f0f0;
+$rounded-3:0.5rem;
+
+.custom-radius{
+    border-radius: $rounded-3;
+}
+.custom-radius-top-leftandright{
+    border-radius: $rounded-3 $rounded-3 0 0;
+}
 .width-540{
     width: 680px;
 }
 .card-body{
-    background-color: rgba(241, 241, 241, 0.5);
+    background-color: $gray-color;
 }
