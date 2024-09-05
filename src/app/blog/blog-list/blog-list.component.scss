@@ -1,4 +1,108 @@
+$rounded-3: 0.5rem;
+$padding-button: 8px;
+$main-color: #4169e1;
+$blured-main-color: #4169e130;
+$rounded-button: 4px;
 .card-img-top {
     object-fit: cover;
     height: 200px;
+}
+a {
+    text-decoration: none;
+}
+.section {
+    position: relative;
+}
+.gray-bg {
+    background-color: #ebf4fa;
+}
+/* Blog 
+---------------------*/
+.blog-grid {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.blog-grid .blog-img {
+  position: relative;
+  border-radius: $rounded-3;
+  overflow: hidden;
+}
+.blog-grid .blog-img .date {
+  position: absolute;
+  background: $main-color;
+  color: #ffffff;
+  padding: 8px 15px;
+  left: 0;
+  top: 10px;
+  font-size: 14px;
+}
+.blog-img img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+.blog-grid .blog-info {
+    box-shadow: 0px 0 15px rgba(31, 45, 61, 0.25);
+    border-radius: $rounded-3;
+    background: #ffffff;
+    padding: 20px;
+    margin: -15px 15px 0;
+    position: relative;
+}
+.blog-grid .blog-info  a h5{
+  color: $main-color;
+}
+.blog-grid .blog-info p {
+  margin: 0;
+}
+.blog-grid .blog-info .btn-bar {
+  margin-top: 20px;
+}
+
+.px-btn-arrow {
+    padding: $padding-button 50px $padding-button $padding-button;
+    border-radius: $rounded-button;
+    background-color: $blured-main-color;
+    line-height: 20px;
+    position: relative;
+    display: inline-block;
+    color: $main-color;
+    -moz-transition: ease all 0.3s;
+    -o-transition: ease all 0.3s;
+    -webkit-transition: ease all 0.3s;
+    transition: ease all 0.3s;
+}
+
+
+.px-btn-arrow .arrow {
+    width: 13px;
+    height: 2px;
+    background: currentColor;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 25px;
+    -moz-transition: ease right 0.3s;
+    -o-transition: ease right 0.3s;
+    -webkit-transition: ease right 0.3s;
+    transition: ease right 0.3s;
+}
+
+.px-btn-arrow .arrow:after {
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid currentColor;
+    border-top: 2px solid currentColor;
+    content: "";
+    position: absolute;
+    top: -3px;
+    right: 0;
+    display: inline-block;
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
 }

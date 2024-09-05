@@ -5,16 +5,66 @@
     <div class="subtitle text-center">
         <p>We write these articles to help business owners improve their marketing and get the most out of their digital advertising.</p>
     </div>
-    <div class="row">
-        <div class="col-md-4 mb-4" *ngFor="let blog of blogs">
-            <div class="card h-100 text-center">
-                <img [src]="blog.image" class="card-img-top" alt="{{ blog.title }} image">
-                <div class="card-body">
-                    <h5 class="card-title">{{ blog.title }}</h5>
-                    <p class="card-text">{{ blog.description }}</p>
-                    <button class="btn btn-primary" (click)="onCardClick()">Read More</button>
+    <div class="blogs-platform">
+        <section class="section" id="blog">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="section-title">
+                            <h2>Latest News</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-6 col-lg-4" *ngFor="let blog of Latestblogs">
+                        <div class="blog-grid">
+                            <div class="blog-img">
+                                <div class="date">{{blog.uploaded_date}}</div>
+                                <img  [src]="blog.image" title="{{blog.title}}" alt="{{blog.title}}">
+                            </div>
+                            <div class="blog-info">
+                                <a href="#"><h5>{{blog.title}}</h5></a>
+                                <p>{{blog.description.substring(0, 60)}}...</p>
+                                <div class="btn-bar text-end">
+                                    <a href="#" class="px-btn-arrow">
+                                        <span>Read More</span>
+                                        <i class="arrow"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
-        </div>
+        </section>
+        <br>
+        <div class="col-lg-7">
+                <div class="section-title">
+                    <h2>Blogs</h2>
+                </div>
+            </div>
+        <div class="row">
+            
+            <div class="col-sm-6 col-lg-4" *ngFor="let blog of blogs">
+                <div class="blog-grid">
+                    <div class="blog-img">
+                        <div class="date">{{blog.uploaded_date}}</div>
+                        <img  [src]="blog.image" title="{{blog.title}}" alt="{{blog.title}}">
+                    </div>
+                    <div class="blog-info">
+                        <a href="#"><h5>{{blog.title}}</h5></a>
+                        <p>{{blog.description.substring(0, 60)}}...</p>
+                        <div class="btn-bar text-end">
+                            <a href="#" class="px-btn-arrow">
+                                <span>Read More</span>
+                                <i class="arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
     </div>
+    
 </div>
