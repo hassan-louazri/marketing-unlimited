@@ -16,6 +16,7 @@ export class HeaderComponent {
     this.translationService.setLanguage(lang);
     this.selectedLanguage = lang;
   }
+  
   scrollToElement(elementId: string): void {
     const element = document.getElementById(elementId);
     if (element) {
