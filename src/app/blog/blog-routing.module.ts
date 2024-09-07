@@ -5,7 +5,7 @@ import { BlogDetailComponent } from './blog-detail/blog-detail.component';
 
 const routes: Routes = [
   { path: '', component: BlogListComponent },
-  { path: 'article', component: BlogDetailComponent }
+  { path: ':file', component: BlogDetailComponent }
 
 ];
 

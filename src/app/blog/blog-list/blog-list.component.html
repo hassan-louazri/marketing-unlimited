@@ -26,7 +26,7 @@
                                 <a href="#"><h5>{{blog.title}}</h5></a>
                                 <p>{{blog.description.substring(0, 60)}}...</p>
                                 <div class="btn-bar text-end">
-                                    <a href="#" class="px-btn-arrow">
+                                    <a [routerLink]="blog.file" class="px-btn-arrow">
                                         <span>Read More</span>
                                         <i class="arrow"></i>
                                     </a>
@@ -56,7 +56,7 @@
                         <a href="#"><h5>{{blog.title}}</h5></a>
                         <p>{{blog.description.substring(0, 60)}}...</p>
                         <div class="btn-bar text-end">
-                            <a href="#" class="px-btn-arrow">
+                            <a [routerLink]="blog.file" class="px-btn-arrow">
                                 <span>Read More</span>
                                 <i class="arrow"></i>
                             </a>

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, SecurityContext } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { BlogRoutingModule } from './blog-routing.module';
@@ -7,6 +7,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { BlogDetailComponent } from './blog-detail/blog-detail.component';
+import { MarkdownModule } from 'ngx-markdown';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -21,7 +22,11 @@ export function HttpLoaderFactory(http: HttpClient) {
     CommonModule,
     BlogRoutingModule,
     HttpClientModule,
-    TranslateModule
+    TranslateModule,
+    MarkdownModule.forRoot({ 
+              loader: HttpClient,
+              sanitize: SecurityContext.NONE
+            })
   ]
 })
 export class BlogModule { }
