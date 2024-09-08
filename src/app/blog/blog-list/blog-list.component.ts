@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-blog-list',
   templateUrl: './blog-list.component.html',
@@ -7,82 +7,74 @@ import { Router } from '@angular/router';
 })
 export class BlogListComponent {
   mailText:string = "";
-  howMuchToCutInDescription : number = 380;
+  howMuchToCutInDescription : number = 200;
   blogs = [
     {
       id: 1,
       title: 'Avoid This Mistake in Business at All Cost',
-      description: 'This is a brief description of blog post 1.',
-      file: 'article-one.md',
-      image: '../../../assets/images/agency.jpg',
-      uploaded_date: '04 FEB',
+      description: 'In this article, we will break down how to avoid making this brutal mistake and highlight the key to your long-term success.',
+      file: 'article-2024-09-05.md',
+      image: '../../../assets/images/article.jpg',
+      dateCreated: '05 SEP 2024',
     },
     {
       id: 2,
-      title: 'Blog Post 2',
-      description: 'This is a brief description of blog post 2.',
-      file: 'article-one.md',
-      image: '../../../assets/images/conversions.jpg',
-      uploaded_date: '04 FEB',
+      title: 'A Simple Step To Become Top Choice in Your Market',
+      description: 'In this article, we will talk about how to become and stay the top choice in your market.',
+      file: 'article-2024-08-29.md',
+      image: '../../../assets/images/article.jpg',
+      dateCreated: '29 AUG 2024',
     },
     {
       id: 3,
-      title: 'Blog Post 3',
-      description: 'This is a brief description of blog post 3.',
-      file: 'article-one.md',
-      image: '../../../assets/images/hero-img.jpg',
-      uploaded_date: '04 FEB',
+      title: "If You Can't Find Enough Clients, This is For You",
+      description: 'In this article, you will learn how a hungry crowd can supercharge your business and can GUARANTEE making more money than you know what to do with.',
+      file: 'article-2024-08-16.md',
+      image: '../../../assets/images/article.jpg',
+      dateCreated: '16 AUG 2024',
     },
     {
       id: 4,
-      title: 'Blog Post 4',
-      description: 'This is a brief description of blog post 4.',
-      file: 'article-one.md',
-      image: '../../../assets/images/free-time.jpeg',
-      uploaded_date: '04 FEB',
+      title: 'Reach Ultimate Success By Leveraging This One Valuable Asset',
+      description: 'In this article, we will discuss how to project the perfect image for your audience to make them engage with your content.',
+      file: 'article-2024-07-24.md',
+      image: '../../../assets/images/article.jpg',
+      dateCreated: '24 JUL 2024',
     },
     {
       id: 5,
-      title: 'Blog Post 5',
-      description: 'This is a brief description of blog post 5.',
-      file: 'article-one.md',
+      title: 'Discover The Secret about Marketing That Everyone is Hiding',
+      description: "In this article, I'll explain why most businesses falter at their first hurdle, how you can push through it, and what it takes to achieve your success.",
+      file: 'article-2024-07-04.md',
       image: '../../../assets/images/article.jpg',
-      uploaded_date: '04 FEB',
-    },
-    {
-      id: 6,
-      title: 'Blog Post 6',
-      description: 'This is a brief description of blog post 6.',
-      file: 'article-one.md',
-      image: '../../../assets/images/conversions.jpg',
-      uploaded_date: '04 FEB',
+      dateCreated: '04 JUL 2024',
     },
   ];
   Latestblogs = [
     {
       id: 1,
-      title: 'Blog Post 1',
-      description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet amet consectetur tempora sed assumenda, quod hic. Blanditiis a vel nam, ipsum, est mollitia nobis aspernatur error explicabo, suscipit accusantium eligendi - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet amet consectetur tempora sed assumenda, quod hic. Blanditiis a vel nam, ipsum, est mollitia nobis aspernatur error explicabo, suscipit accusantium eligendi --- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet amet consectetur tempora sed assumenda, quod hic. Blanditiis a vel nam, ipsum, est mollitia nobis aspernatur error explicabo, suscipit accusantium eligendi - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet amet consectetur tempora sed assumenda, quod hic. Blanditiis a vel nam, ipsum, est mollitia nobis aspernatur error explicabo, suscipit accusantium eligendi.',
-      file: 'article-one.md',
-      image: '../../../assets/images/free-time.jpeg',
-      uploaded_date: '04 FEB',
+      title: 'Avoid This Mistake in Business at All Cost',
+      description: 'In this article, we will break down how to avoid making this brutal mistake and highlight the key to your long-term success.',
+      file: 'article-2024-09-05.md',
+      image: '../../../assets/images/article.jpg',
+      dateCreated: '05 SEP 2024',
     },
     {
       id: 2,
-      title: 'Blog Post 2',
-      description: 'This is a brief description of blog post 2.',
-      file: 'article-one.md',
+      title: 'A Simple Step To Become Top Choice in Your Market',
+      description: 'In this article, we will talk about how to become and stay the top choice in your market.',
+      file: 'article-2024-08-29.md',
       image: '../../../assets/images/article.jpg',
-      uploaded_date: '04 FEB',
+      dateCreated: '29 AUG 2024',
     },
     {
       id: 3,
-      title: 'Blog Post 3',
-      description: 'This is a brief description of blog post 3.',
-      file: 'article-one.md',
-      image: '../../../assets/images/conversions.jpg',
-      uploaded_date: '04 FEB',
-    },
+      title: "If You Can't Find Enough Clients, This is For You",
+      description: 'In this article, you will learn how a hungry crowd can supercharge your business and can GUARANTEE making more money than you know what to do with.',
+      file: 'article-2024-08-16.md',
+      image: '../../../assets/images/article.jpg',
+      dateCreated: '16 AUG 2024',
+    }
   ];
 
   share_func(blog: any): void{

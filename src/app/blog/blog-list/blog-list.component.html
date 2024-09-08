@@ -10,7 +10,7 @@
                 <div class="row">
                     <div class="col-lg-7">
                         <div class="section-title">
-                            <h2>Latest News</h2>
+                            <h2>Latest Articles</h2>
                         </div>
                     </div>
                 </div>
@@ -18,7 +18,7 @@
                     <div class="col-sm-6 col-lg-4 custom-card-styling" *ngFor="let blog of Latestblogs">
                         <div class="blog-grid">
                             <div class="blog-img">
-                                <div class="date">{{blog.uploaded_date}}</div>
+                                <div class="date">{{blog.dateCreated}}</div>
                                 <img  [src]="blog.image" title="{{blog.title}}" alt="{{blog.title}}">
                             </div>
                             <div class="blog-info">
@@ -40,7 +40,7 @@
         <br>
         <div class="col-lg-7">
                 <div class="section-title">
-                    <h2>Blogs</h2>
+                    <h2>All Articles</h2>
                 </div>
             </div>
         <div class="row">
@@ -48,7 +48,7 @@
             <div class="col-sm-6 col-lg-4 custom-card-styling" *ngFor="let blog of blogs">
                 <div class="blog-grid">
                     <div class="blog-img">
-                        <div class="date">{{blog.uploaded_date}}</div>
+                        <div class="date">{{blog.dateCreated}}</div>
                         <img  [src]="blog.image" title="{{blog.title}}" alt="{{blog.title}}">
                     </div>
                     <div class="blog-info">
