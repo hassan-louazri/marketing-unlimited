@@ -1,6 +1,5 @@
 import { TranslationService } from './core/translation.service';
 import { Component } from '@angular/core';
-import { injectSpeedInsights } from '@vercel/speed-insights';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +8,6 @@ import { injectSpeedInsights } from '@vercel/speed-insights';
 })
 export class AppComponent {
   constructor(private translation: TranslationService) {
-    injectSpeedInsights();
   }
 
   ngOnInit() {
