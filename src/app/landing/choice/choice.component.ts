@@ -6,19 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./choice.component.scss']
 })
 export class ChoiceComponent {
-  cards = [// ADD 'ENGLISH VERSION' + 'FR VERSION'
+  cards = [
     {
-      icon: '../../../assets/icons/clock.svg',
+      icon: 'list_alt',
       title: 'CHOICE.CARDS.ONE.TITLE',
       text: 'CHOICE.CARDS.ONE.TEXT'
     },
     {
-      icon: '../../../assets/icons/clock.svg',
+      icon: 'supervisor_account',
       title: 'CHOICE.CARDS.TWO.TITLE',
       text: 'CHOICE.CARDS.TWO.TEXT'
     },
     {
-      icon: '../../../assets/icons/clock.svg',
+      icon: 'support_agent',
       title: 'CHOICE.CARDS.THREE.TITLE',
       text: 'CHOICE.CARDS.THREE.TEXT'
     }
