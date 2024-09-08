@@ -7,7 +7,6 @@
     </div>
     <div class="blogs-platform">
         <section class="section" id="blog">
-            <div class="container">
                 <div class="row">
                     <div class="col-lg-7">
                         <div class="section-title">
@@ -16,27 +15,27 @@
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-sm-6 col-lg-4" *ngFor="let blog of Latestblogs">
+                    <div class="col-sm-6 col-lg-4 custom-card-styling" *ngFor="let blog of Latestblogs">
                         <div class="blog-grid">
                             <div class="blog-img">
                                 <div class="date">{{blog.uploaded_date}}</div>
                                 <img  [src]="blog.image" title="{{blog.title}}" alt="{{blog.title}}">
                             </div>
                             <div class="blog-info">
-                                <a href="#"><h5>{{blog.title}}</h5></a>
-                                <p>{{blog.description.substring(0, 60)}}...</p>
-                                <div class="btn-bar text-end">
-                                    <a [routerLink]="blog.file" class="px-btn-arrow">
-                                        <span>Read More</span>
-                                        <i class="arrow"></i>
-                                    </a>
-                                </div>
+                                    <a href="#"><h5 class="custom-font-size">{{blog.title}}</h5></a>
+                                    <p>{{blog.description.substring(0, howMuchToCutInDescription)}}...</p>
+                                    <div class="btn-bar d-flex justify-content-between">
+                                        <button (click)='share_func(blog)'><img class="share-icon" src="../../../assets/icons/share.svg" alt="share" /></button>
+                                        <a [routerLink]="blog.file" class="px-btn-arrow">
+                                            <span>Read More</span>
+                                            <i class="arrow"></i>
+                                        </a>
+                                    </div>
                             </div>
                         </div>
                     </div>
                     
                 </div>
-            </div>
         </section>
         <br>
         <div class="col-lg-7">
@@ -46,21 +45,22 @@
             </div>
         <div class="row">
             
-            <div class="col-sm-6 col-lg-4" *ngFor="let blog of blogs">
+            <div class="col-sm-6 col-lg-4 custom-card-styling" *ngFor="let blog of blogs">
                 <div class="blog-grid">
                     <div class="blog-img">
                         <div class="date">{{blog.uploaded_date}}</div>
                         <img  [src]="blog.image" title="{{blog.title}}" alt="{{blog.title}}">
                     </div>
                     <div class="blog-info">
-                        <a href="#"><h5>{{blog.title}}</h5></a>
-                        <p>{{blog.description.substring(0, 60)}}...</p>
-                        <div class="btn-bar text-end">
-                            <a [routerLink]="blog.file" class="px-btn-arrow">
-                                <span>Read More</span>
-                                <i class="arrow"></i>
-                            </a>
-                        </div>
+                            <a href="#"><h5 class="custom-font-size">{{blog.title}}</h5></a>
+                            <p>{{blog.description.substring(0, howMuchToCutInDescription)}}...</p>
+                            <div class="btn-bar d-flex justify-content-between">
+                                <button (click)='share_func(blog)'><img class="share-icon" src="../../../assets/icons/share.svg" alt="share" /></button>
+                                <a [routerLink]="blog.file" class="px-btn-arrow">
+                                    <span>Read More</span>
+                                    <i class="arrow"></i>
+                                </a>
+                            </div>
                     </div>
                 </div>
             </div>

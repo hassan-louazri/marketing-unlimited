@@ -6,6 +6,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./blog-list.component.scss'],
 })
 export class BlogListComponent {
+  mailText:string = "";
+  howMuchToCutInDescription : number = 380;
   blogs = [
     {
       id: 1,
@@ -60,7 +62,7 @@ export class BlogListComponent {
     {
       id: 1,
       title: 'Blog Post 1',
-      description: 'This is a brief description of blog post 1.',
+      description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet amet consectetur tempora sed assumenda, quod hic. Blanditiis a vel nam, ipsum, est mollitia nobis aspernatur error explicabo, suscipit accusantium eligendi - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet amet consectetur tempora sed assumenda, quod hic. Blanditiis a vel nam, ipsum, est mollitia nobis aspernatur error explicabo, suscipit accusantium eligendi --- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet amet consectetur tempora sed assumenda, quod hic. Blanditiis a vel nam, ipsum, est mollitia nobis aspernatur error explicabo, suscipit accusantium eligendi - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet amet consectetur tempora sed assumenda, quod hic. Blanditiis a vel nam, ipsum, est mollitia nobis aspernatur error explicabo, suscipit accusantium eligendi.',
       file: 'article-one.md',
       image: '../../../assets/images/free-time.jpeg',
       uploaded_date: '04 FEB',
@@ -82,4 +84,24 @@ export class BlogListComponent {
       uploaded_date: '04 FEB',
     },
   ];
+
+  share_func(blog: any): void{
+    const title = blog.title;
+    const text = blog.description;
+    const url = window.location.href+ "/" +blog.file;
+    if (navigator.share !== undefined) {
+      navigator
+        .share({
+          title,
+          text,
+          url
+        })
+        .then(() => console.log("Shared!"))
+        .catch(err => console.error(err));
+    } else {
+      this.mailText = `mailto:?subject=${title}&body=${text}%0A${url}`;
+      window.location.href = this.mailText; 
+    }
+    
+  }
 }
