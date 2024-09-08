@@ -23,6 +23,7 @@
     "@ngx-translate/core": "^15.0.0",
     "@ngx-translate/http-loader": "^8.0.0",
     "@popperjs/core": "^2.11.6",
+    "@vercel/speed-insights": "^1.0.12",
     "bootstrap": "^5.2.3",
     "marked": "^4.3.0",
     "ngx-markdown": "^16.0.0",
