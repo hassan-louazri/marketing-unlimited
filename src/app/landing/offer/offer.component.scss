@@ -6,15 +6,13 @@ $font-radius: 32px;
   height: auto; /* Adjust the height as needed */
   background-color: #4169e1; /* Light background color */
   text-align: center;
-  padding: 0 80px 80px 80px;
+  padding: 40px 100px 40px 100px;
   flex-direction: column;
 }
 .material-symbols-outlined {
   font-size: 60px;
 }
-.responsive-margin{
-  margin-top: 30px;
-}
+
 .head-text {
   font-size: 1.5rem;
   font-weight: normal;
@@ -54,10 +52,7 @@ $font-radius: 32px;
 }
 @media (max-width: 992px) {
   .head{
-    padding: 0;
-  }
-  .responsive-margin{
-    margin-top: 12px;
+    padding: 20px 50px 20px 50px;
   }
   .offer-card {
     flex-direction: column;

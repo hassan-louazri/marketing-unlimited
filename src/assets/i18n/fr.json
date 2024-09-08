@@ -78,7 +78,7 @@
         "SEVEN": "Ça vous va ?",
         "EIGHT": "Remplissez alors ce formulaire :",
         "FORM": {
-            "FULLNAME": "Nome complet",
+            "FULLNAME": "Nom complet",
             "EMAIL": "Courriel",
             "COMPANY": "Nom d'entreprise",
             "PHONE": "Téléphone",
