@@ -28,6 +28,20 @@ h3 {
   font-weight: 700;
 }
 
+
+.offer-intro {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.offer-intro h5 {
+  line-height: 1.8;
+}
+
+.card-container {
+  width: 50%;
+}
+
 .card-body {
     width: 50%;
     display: flex;
@@ -76,6 +90,18 @@ h3 {
 @media (max-width: 992px) {
   .head{
     padding: 20px 50px 20px 50px;
+  }
+  .offer-intro {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .offer-intro h5 {
+    line-height: 1.5;
+  }
+  
+  .card-container {
+    width: 100%;
   }
   .offer-card {
     flex-direction: column;

@@ -21,6 +21,11 @@ export class ChoiceComponent {
       icon: 'support_agent',
       title: 'CHOICE.CARDS.THREE.TITLE',
       text: 'CHOICE.CARDS.THREE.TEXT'
+    },
+    {
+      icon: 'support_agent',
+      title: "Or choose us",
+      text: "We're so confident in our service that we win only if you win. You won't have to pay us if we don't deliver. We believe it's the basis of a good business relationship"
     }
   ]
 }
