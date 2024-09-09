@@ -10,6 +10,8 @@ import { FormsModule } from '@angular/forms';
 import { HomepageComponent } from './homepage/homepage.component';
 import { LandingRoutingModule } from './landing-routing.module';
 import { NewsletterComponent } from './newsletter/newsletter.component';
+import { ServicesComponent } from './services/services.component';
+import { ContactComponent } from './contact/contact.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -21,7 +23,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     OfferComponent,
     ChoiceComponent,
     HomepageComponent,
-    NewsletterComponent
+    NewsletterComponent,
+    ServicesComponent,
+    ContactComponent
   ],
   imports: [
     CommonModule,
