@@ -5,12 +5,18 @@ $gray-color: #f0f0f0;
     margin: 24px auto;
     display: block;
 }
+
+h1 {
+    font-weight: 700;
+}
 .custom-width{
     width: 600px;
 } 
 .card-title {
     font-size: 1.5rem;
-    margin-top: 15px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 
 .material-symbols-outlined {
@@ -18,7 +24,6 @@ $gray-color: #f0f0f0;
 }
 .card-text {
     font-size: 1rem;
-    margin-top: 10px;
     padding: 5%;
 }
 

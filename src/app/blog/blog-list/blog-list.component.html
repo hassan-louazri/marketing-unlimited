@@ -3,68 +3,82 @@
         <h1>Our Articles</h1>
     </div>
     <div class="subtitle text-center">
-        <p>We write these articles to help business owners improve their marketing and get the most out of their digital advertising.</p>
+        <p>
+            We write these articles to help business owners improve their marketing
+            and get the most out of their digital advertising.
+        </p>
     </div>
     <div class="blogs-platform">
         <section class="section" id="blog">
-                <div class="row">
-                    <div class="col-lg-7">
-                        <div class="section-title">
-                            <h2>Latest Articles</h2>
-                        </div>
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="section-title">
+                        <h2>Latest Articles</h2>
                     </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-sm-6 col-lg-4 custom-card-styling" *ngFor="let blog of Latestblogs">
-                        <div class="blog-grid">
-                            <div class="blog-img">
-                                <div class="date">{{blog.dateCreated}}</div>
-                                <img  [src]="blog.image" title="{{blog.title}}" alt="{{blog.title}}">
-                            </div>
-                            <div class="blog-info">
-                                    <a href="#"><h5 class="custom-font-size">{{blog.title}}</h5></a>
-                                    <p>{{blog.description.substring(0, howMuchToCutInDescription)}}...</p>
-                                    <div class="btn-bar d-flex justify-content-between">
-                                        <button (click)='share_func(blog)'><img class="share-icon" src="../../../assets/icons/share.svg" alt="share" /></button>
-                                        <a [routerLink]="blog.file" class="px-btn-arrow">
-                                            <span>Read More</span>
-                                            <i class="arrow"></i>
-                                        </a>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-        </section>
-        <br>
-        <div class="col-lg-7">
-                <div class="section-title">
-                    <h2>All Articles</h2>
                 </div>
             </div>
-        <div class="row">
-            
-            <div class="col-sm-6 col-lg-4 custom-card-styling" *ngFor="let blog of blogs">
-                <div class="blog-grid">
-                    <div class="blog-img">
-                        <div class="date">{{blog.dateCreated}}</div>
-                        <img  [src]="blog.image" title="{{blog.title}}" alt="{{blog.title}}">
-                    </div>
-                    <div class="blog-info">
-                            <a href="#"><h5 class="custom-font-size">{{blog.title}}</h5></a>
-                            <p>{{blog.description.substring(0, howMuchToCutInDescription)}}...</p>
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-lg-4 custom-card-styling" *ngFor="let blog of Latestblogs">
+                    <div class="blog-grid">
+                        <div class="blog-img">
+                            <div class="date">{{ blog.dateCreated }}</div>
+                            <img [src]="blog.image" title="{{ blog.title }}" alt="{{ blog.title }}" />
+                        </div>
+                        <div class="blog-info">
+                            <a [routerLink]="blog.file">
+                                <h5 class="custom-font-size">{{ blog.title }}</h5>
+                            </a>
+                            <p>
+                                {{
+                                blog.description.substring(0, howMuchToCutInDescription)
+                                }}...
+                            </p>
                             <div class="btn-bar d-flex justify-content-between">
-                                <button (click)='share_func(blog)'><img class="share-icon" src="../../../assets/icons/share.svg" alt="share" /></button>
+                                <button (click)="share_func(blog)">
+                                    <span class="material-symbols-outlined">share</span>
+                                </button>
                                 <a [routerLink]="blog.file" class="px-btn-arrow">
                                     <span>Read More</span>
                                     <i class="arrow"></i>
                                 </a>
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>    
+        </section>
+        <br />
+        <div class="col-lg-7">
+            <div class="section-title">
+                <h2>All Articles</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-lg-4 custom-card-styling" *ngFor="let blog of blogs">
+                <div class="blog-grid">
+                    <div class="blog-img">
+                        <div class="date">{{ blog.dateCreated }}</div>
+                        <img [src]="blog.image" title="{{ blog.title }}" alt="{{ blog.title }}" />
+                    </div>
+                    <div class="blog-info">
+                        <a [routerLink]="blog.file">
+                            <h5 class="custom-font-size">{{ blog.title }}</h5>
+                        </a>
+                        <p>
+                            {{ blog.description.substring(0, howMuchToCutInDescription) }}...
+                        </p>
+                        <div class="btn-bar d-flex justify-content-between">
+                            <button (click)="share_func(blog)">
+                                <span class="material-symbols-outlined">share</span>
+                            </button>
+                            <a [routerLink]="blog.file" class="px-btn-arrow">
+                                <span>Read More</span>
+                                <i class="arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    
 </div>

@@ -2,12 +2,23 @@
 $image-size-who-give-height-to-the-cards: 300px;     // 300px   default
 $width-when-affecting-styles-for-large-cards: 575px; // 575px   default
 $heading-font-size: 32px;                            // 1.25rem default
+$heading-font-weight: 700;                           // 400     default
 $subheading-font-size: 18px;                         // 16px    default
+$subheading-font-weight: 400;                        // 200     default
 $rounded-3: 0.5rem;
 $padding-button: 8px;
 $main-color: #4169e1;
 $blured-main-color: #4169e130;
 $rounded-button: 4px;
+
+h1 {
+  font-weight: $heading-font-weight;
+}
+
+h2 {
+  font-weight: $subheading-font-weight;
+}
+
 .card-img-top {
     object-fit: cover;
     height: 200px;
@@ -68,9 +79,11 @@ a {
 .blog-info{
   a .custom-font-size {
     font-size: $heading-font-size;
+    font-weight: $heading-font-weight;
   }
   p {
     font-size: $subheading-font-size;
+    font-weight: $subheading-font-weight;
   }
 }
 
@@ -128,6 +141,9 @@ a {
     width: 30px;
     height: 30px;
   }
+}
+.material-symbols-outlined {
+  color: $main-color;
 }
 @media (min-width:$width-when-affecting-styles-for-large-cards) {
   .custom-card-styling{
