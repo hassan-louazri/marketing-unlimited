@@ -8,8 +8,7 @@ import { TranslationService } from '../core/translation.service';
 })
 export class HeaderComponent {
   isMenuCollapsed: boolean = true;
-  selectedLanguage: string | undefined;
-
+  selectedLanguage!: string;
   constructor(private translationService: TranslationService) {}
 
   switchLanguage(lang: string) {

@@ -8,27 +8,31 @@
       <div class="collapse navbar-collapse" [ngbCollapse]="isMenuCollapsed" id="navbarNav">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
-            <a class="nav-link pb-0" routerLink="home">{{ "HEADER.HOME" | translate }}</a>
+            <a class="nav-link" routerLink="home">{{ "HEADER.HOME" | translate }}</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" routerLink="blog">{{ "HEADER.BLOG" | translate }}</a>
           </li>
         </ul>
-
-        <div ngbDropdown class="d-inline-block nav-item mr-25">
-          <a class="nav-link cursor-pointer" id="language-dropdown" ngbDropdownToggle>
-            {{ "HEADER.DROPDOWN" | translate }}
-          </a>
-          <div ngbDropdownMenu aria-labelledby="language-dropdown">
-            <button ngbDropdownItem (click)='switchLanguage("en")'> <span *ngIf="selectedLanguage === 'en'">( * )</span> {{ "HEADER.ENGLISH" | translate }}</button>
-            <button ngbDropdownItem (click)='switchLanguage("fr")'> <span *ngIf="selectedLanguage === 'fr'">( * )</span> {{ "HEADER.FRENCH" | translate }}</button>
-          </div>
+        <div class="nav-item">
+          <div ngbDropdown class="d-inline-block nav-item my-2 mr-25">
+            <a class="nav-link cursor-pointer" id="language-dropdown" ngbDropdownToggle>
+              {{ "HEADER.DROPDOWN" | translate }}
+            </a>
+            <div ngbDropdownMenu aria-labelledby="language-dropdown">
+              <button ngbDropdownItem (click)='switchLanguage("en")'> <span *ngIf="selectedLanguage === 'en'">( * )</span> {{ "HEADER.ENGLISH" | translate }}</button>
+              <button ngbDropdownItem (click)='switchLanguage("fr")'> <span *ngIf="selectedLanguage === 'fr'">( * )</span> {{ "HEADER.FRENCH" | translate }}</button>
+            </div>
+          </div> 
         </div>
+        
 
-
-        <a class="btn-custom my-2" routerLink="contact" type="submit">
-          {{ "HEADER.CONTACT_BUTTON" | translate }}
-        </a>
+        <div class="nav-item">
+          <a class="btn-custom" routerLink="contact" type="submit">
+            {{ "HEADER.CONTACT_BUTTON" | translate }}
+          </a>
+        </div>
+        
       </div>
     </div>
   </nav>
