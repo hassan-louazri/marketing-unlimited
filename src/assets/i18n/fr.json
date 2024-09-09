@@ -67,6 +67,11 @@
             }
         }
     },
+    "NEWSLETTER":{
+        "HEADLINE" : "Recevez les dernières informations sur notre marketing",
+        "DESCRIPTION" : "Inscrivez-vous à notre newsletter et ne manquez plus rien. Nous vous promettons de ne pas vous envoyer de spam !",
+        "BUTTON" : "S'abonner"
+    },
     "CONTACT": {
         "TITLE": "Contacter nous",
         "ONE": "Curieux de savoir comment nous aborderions le marketing pour votre entreprise? Alors faites ceci :",

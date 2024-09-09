@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./newsletter.component.scss']
 })
 export class NewsletterComponent {
-
+  // NEWSLETTER SCRIPT AFTER CLICKING THE SUBSCRIBE BUTTON
 }

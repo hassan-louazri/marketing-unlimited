@@ -1,0 +1,40 @@
+
+$font-radius: 0.5rem;
+.input-container {
+    input {
+        width: 75%;
+        padding: 0.60rem 1.5rem;
+        border: 3px solid #4169e1;
+        font-size: 1.25rem;
+        font-weight: 600;
+        outline: 0;
+        border-radius: $font-radius 0 0 $font-radius;
+    }
+    .news-button {
+        width: 25%;
+        padding: 0.60rem 1.5rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: white;
+        background-color: #4169e1;
+        border: 3px solid #4169e1;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        border-radius: 0 $font-radius $font-radius 0;
+    }
+
+}
+@media (max-width: 768px) {
+    .input-container {
+        input {
+            width: 100%;
+            display: block;
+            border-radius: $font-radius $font-radius 0 0;
+        }
+        .news-button{
+            width: 100%;
+            display: block;
+            border-radius: 0 0 $font-radius $font-radius;
+        }
+    }
+}
