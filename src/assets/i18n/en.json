@@ -72,6 +72,11 @@
         "DESCRIPTION":"Register to our newsletter and don't miss anything anymore. We promise we will not spam you!",
         "BUTTON":"Subscribe"
     },
+    "HEROCONTACT":{
+        "HEADER":"Join Our Community",
+        "HEADLINE":"Ready to take your business to the next level? Join our community of forward-thinking professionals and access exclusive tools, insights, and opportunities designed to help you grow.",
+        "BUTTON":"Join Us"
+    },
     "CONTACT": {
         "TITLE": "Contact Us",
         "ONE": "Curious about how we would approach marketing for your business? Then do this:",

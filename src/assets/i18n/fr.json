@@ -72,6 +72,11 @@
         "DESCRIPTION" : "Inscrivez-vous à notre newsletter et ne manquez plus rien. Nous vous promettons de ne pas vous envoyer de spam !",
         "BUTTON" : "S'abonner"
     },
+    "HEROCONTACT": {
+        "HEADER": "Rejoignez Notre Communauté",
+        "HEADLINE": "Prêt à faire passer votre entreprise au niveau supérieur ? Rejoignez notre communauté de professionnels avant-gardistes et accédez à des outils, des informations et des opportunités exclusives conçus pour vous aider à croître.",
+        "BUTTON": "Rejoignez-nous"
+    },
     "CONTACT": {
         "TITLE": "Contacter nous",
         "ONE": "Curieux de savoir comment nous aborderions le marketing pour votre entreprise? Alors faites ceci :",

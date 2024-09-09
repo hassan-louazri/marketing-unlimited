@@ -13,7 +13,9 @@ $font-radius: 0.5rem;
 .material-symbols-outlined {
   font-size: 60px;
 }
-
+img{
+  object-fit: cover;
+}
 .head-text {
   font-size: 1.5rem;
   font-weight: 700;
@@ -61,7 +63,7 @@ h3 {
   overflow: hidden;
 }
 .card-img-holder {
-  display: block;
+  display: flex;
   width: 50%;
 }
 .offer-card .card-img-holder img {
