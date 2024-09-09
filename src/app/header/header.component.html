@@ -8,10 +8,10 @@
       <div class="collapse navbar-collapse" [ngbCollapse]="isMenuCollapsed" id="navbarNav">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
-            <a class="nav-link" href="home">{{ "HEADER.HOME" | translate }}</a>
+            <a class="nav-link pb-0" routerLink="home">{{ "HEADER.HOME" | translate }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="blog">{{ "HEADER.BLOG" | translate }}</a>
+            <a class="nav-link" routerLink="blog">{{ "HEADER.BLOG" | translate }}</a>
           </li>
         </ul>
 
@@ -26,7 +26,7 @@
         </div>
 
 
-        <a class="btn-custom my-2" (click)="scrollToElement('contact-form')" type="submit">
+        <a class="btn-custom my-2" routerLink="contact" type="submit">
           {{ "HEADER.CONTACT_BUTTON" | translate }}
         </a>
       </div>
