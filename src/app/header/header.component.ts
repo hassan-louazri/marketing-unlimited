@@ -11,6 +11,11 @@ export class HeaderComponent {
   selectedLanguage!: string;
   constructor(private translationService: TranslationService) {}
 
+  ngOnInit() {
+    this.selectedLanguage = this.translationService.getLanguage();
+    this.translationService.setLanguage(this.selectedLanguage);
+  }
+
   switchLanguage(lang: string) {
     this.translationService.setLanguage(lang);
     this.selectedLanguage = lang;
