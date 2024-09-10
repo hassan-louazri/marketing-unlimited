@@ -13,10 +13,12 @@
 .nav-link {
   color: #fff;
   font-weight: 600;
+  transition: all 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #fdf;
+  color: #fff;
+  text-shadow: 0 0 1px #fff;
   text-decoration: underline;
   text-underline-offset: 0.2rem;
 }

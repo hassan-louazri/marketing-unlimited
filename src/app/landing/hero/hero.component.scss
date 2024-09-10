@@ -17,6 +17,7 @@
     height: 100%;
     object-fit: cover;
     z-index: 1;
+    pointer-events: none;
     filter: brightness(50%);
   }
 
@@ -51,14 +52,18 @@
     color: white;
     background-color: #4169e1; /* Bootstrap primary color */
     border: solid;
-    border-color: #0056b3;
+    border-color: white;
     border-radius: 0.25rem;
-    border-width: 0.35rem;
+    border-width: 0.1rem;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 
     &:hover {
-      background-color: #0056b3; /* Darken the button on hover */
+      background-color: #fff; 
+      border-width: 0.1rem;
+      border-color: #4169e1;
+      color: #4169e1;
+      text-shadow: none;
     }
   }
 
