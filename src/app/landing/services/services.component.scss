@@ -6,10 +6,11 @@ h1 {
 .services {
     background-color: #fff;
     padding-bottom: 20px;
+    .container {
+        width: 70%;
+    }
 }
-.container {
-    width: 70%;
-}
+
 
 .service-card {
     background-color: #f0f0f0;
@@ -44,12 +45,15 @@ h1 {
 }
 
 @media (max-width: 1400px) {
+    .services .container{
+        width: 100%;
+    }
     .card-container{
         display: flex;
         justify-content: center;
     }
     .service-card {
-        width: 60%;
+        width: 100%;
         flex-direction: column;
         .card-img-holder{
             width: 100%;
