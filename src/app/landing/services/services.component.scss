@@ -1,0 +1,46 @@
+h1 {
+    font-weight: 700;
+}
+
+.services {
+    background-color: #f0f0f0;
+    padding-bottom: 20px;
+}
+.container {
+    width: 70%;
+}
+.service-card {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    margin: 40px;
+    width: 100%; 
+}
+
+.card-img-holder {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        border-radius: 25px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.card-body {
+    flex: 2;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    padding: 20px;
+}
+
+@media (max-width: 992px) {
+    .service-card {
+        flex-direction: column;
+    }
+}

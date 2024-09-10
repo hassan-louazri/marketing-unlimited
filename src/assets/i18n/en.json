@@ -31,6 +31,12 @@
             "TEXT_FOUR": "Our job is to help you launch your product or service into the market in the best way possible."
         },
         "TITLE": "What We Offer",
+        "SUBTITLE_ONE": "Most businesses waste thousands of dollars on ads that don't deliver.",
+        "SUBTITLE_TWO": "But it's not just money being wasted — every ineffective ad hurts their brand, damages their credibility, and drains their potential to grow.",
+        "SUBTITLE_THREE": "Imagine seeing your hard-earned dollars vanish while competitors capture your customers.",
+        "SUBTITLE_FOUR": "Don't fall into the same trap. Your investment should generate real results.",
+        "SUBTITLE_FIVE": "With our expert strategies, you will turn your advertising into a money making machine.",
+        "SUBTITLE_SIX": "Choosing us as partners will give you the following:",
         "CARDS": {
             "ONE": {
                 "TITLE": "More Free Time",
@@ -64,18 +70,45 @@
             "THREE": {
                 "TITLE": "Hire an agency?",
                 "TEXT": "Don't have a marketing budget of tens of thousands of euros per month? Then your account is probably going to be managed by the intern of the assistant of the assistant. Not ideal."
+            },
+            "FOUR": {
+                "TITLE": "Or choose us",
+                "TEXT": "We're so confident in our service that we win only if you win. You won't have to pay us if we don't deliver. We believe it's the basis of a good business relationship"
             }
         }
     },
+    "SERVICES": {
+        "TITLE": "Our Services",
+        "META": {
+            "TITLE": "Social Media Advertising",
+            "DESCRIPTION": "Meta's Ad platform allows hyper-local targeting. Everybody uses Meta's products (Facebook & Instragram) and your next client probably does too. Meta ads can be tailored to increase conversions, drive traffic and increase sales, making it the perfect solution for a local business."
+        },
+        "CONTENT": {
+            "TITLE": "Content Marketing",
+            "DESCRIPTION": "Writing is a superpower. And we will help you harness that power by creating relevant content tailored to your prospects. Writing builds authority, improves traffic and promotes engagment with your target audience. Be it blog posts, video scripts or ad copy, we will deliver high quality content that positions you as the local authority."
+        },
+        "EMAIL": {
+            "TITLE": "Email Marketing",
+            "DESCRIPTION": "This is a criminally underutilized tool. Email marketing is so powerful in promoting direct communication with local customers and driving repeat business. It is also an ultra-effective and cost-efficient tool to nurture local prospects and offer loyalty discounts or timely offers. We will write email drafts for you that do exactly that."
+        },
+        "GOOGLE": {
+            "TITLE": "Google Advertising",
+            "DESCRIPTION": "Next to Meta Ads, this is also one of the most powerful marketing tools that exist today. You will gain massive visibility, especially for searches with commercial intent related to your service or product."
+        },
+        "WEBSITE": {
+            "TITLE": "Lading Page Creation & Review",
+            "DESCRIPTION": "A landing page is where all your prospects converge to discover your service. A landing page that grabs and retains attention is crucil to increase sales and improve a business. If you already have one, we will go through it and see where we can improve it."
+        }
+    },
     "NEWSLETTER":{
-        "HEADLINE":"Get the latest info about our marketing",
-        "DESCRIPTION":"Register to our newsletter and don't miss anything anymore. We promise we will not spam you!",
+        "HEADLINE":"The Marketing Newsletter",
+        "DESCRIPTION":"Your advantage in business. Subscribe now for weekly content centered around business, marketing, networking, mentality and more.",
         "BUTTON":"Subscribe"
     },
     "HEROCONTACT":{
-        "HEADER":"Join Our Community",
-        "HEADLINE":"Ready to take your business to the next level? Join our community of forward-thinking professionals and access exclusive tools, insights, and opportunities designed to help you grow.",
-        "BUTTON":"Join Us"
+        "HEADER":"Get a Free Marketing Consultation",
+        "HEADLINE":"Ready to see how we can take your business to the next level? Click the button below and fill out the quick form. You'll receive a detailed marketing analysis absolutely free of charge — and we'll get back to you within 48 hours, guaranteed.",
+        "BUTTON":"Yes! I want that"
     },
     "CONTACT": {
         "TITLE": "Contact Us",

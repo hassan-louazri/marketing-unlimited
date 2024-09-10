@@ -50,6 +50,7 @@ export class BlogListComponent {
       dateCreated: '04 JUL 2024',
     },
   ];
+  
   Latestblogs = [
     {
       id: 1,

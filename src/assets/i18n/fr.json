@@ -31,6 +31,12 @@
             "TEXT_FOUR": "Notre travail consiste à vous aider à lancer votre produit ou service sur le marché de la meilleure façon possible."
         },
         "TITLE": "Ce que nous offrons",
+        "SUBTITLE_ONE": "La plupart des entrepreneurs gaspillent des milliers d'euros en publicités qui n'apportent rien.",
+        "SUBTITLE_TWO": "Mais ce n'est pas seulement de l'argent qui est gaspillé : chaque publicité inefficace nuit à la marque, à la crédibilité et au potentiel de croissance de l'entreprise.",
+        "SUBTITLE_THREE": "Imaginez que vos revenus durement gagnés s'envolent alors que vos concurrents s'emparent de vos clients.",
+        "SUBTITLE_FOUR": "Ne tombez pas dans le même piège. Votre investissement doit générer des résultats concrets.",
+        "SUBTITLE_FIVE": "Grâce à nos stratégies spécialisées, vous transformerez vos publicités en une machine à générer des gains.",
+        "SUBTITLE_SIX": "En nous choisissant comme partenaires, vous bénéficierez des avantages suivants :",
         "CARDS": {
             "ONE": {
                 "TITLE": "Plus de Temps Libre",
@@ -64,18 +70,45 @@
             "THREE": {
                 "TITLE": "Recourir à une agence ?",
                 "TEXT": "Vous ne disposez pas d'un budget marketing de plusieurs dizaines de milliers d'euros par mois ? Dans ce cas, votre compte sera probablement géré par le stagiaire de l'assistant de l'assistant. Pas idéal."
+            },
+            "FOUR": {
+                "TITLE": "Ou nous choisir",
+                "TEXT": "Nous avons tellement confiance en notre service que nous ne gagnons que si vous gagnez. Vous n'aurez pas à nous payer si nous ne tenons pas nos promesses. Nous pensons que c'est la base d'une bonne relation professionnelle."
             }
         }
     },
+    "SERVICES": {
+        "TITLE": "Nos Services",
+        "META": {
+            "TITLE": "Publicité Sur Médias Sociaux",
+            "DESCRIPTION": "Meta's Ad platform allows hyper-local targeting. Everybody uses Meta's products (Facebook & Instragram) and your next client probably does too. Meta ads can be tailored to increase conversions, drive traffic and increase sales, making it the perfect solution for a local business."
+        },
+        "CONTENT": {
+            "TITLE": "Marketing Par Le Contenu",
+            "DESCRIPTION": "Writing is a superpower. And we will help you harness that power by creating relevant content tailored to your prospects. Writing builds authority, improves traffic and promotes engagment with your target audience. Be it blog posts, video scripts or ad copy, we will deliver high quality content that positions you as the local authority."
+        },
+        "EMAIL": {
+            "TITLE": "Marketing Par Les Emails",
+            "DESCRIPTION": "This is a criminally underutilized tool. Email marketing is so powerful in promoting direct communication with local customers and driving repeat business. It is also an ultra-effective and cost-efficient tool to nurture local prospects and offer loyalty discounts or timely offers. We will write email drafts for you that do exactly that."
+        },
+        "GOOGLE": {
+            "TITLE": "Publicité Sur Google",
+            "DESCRIPTION": "Next to Meta Ads, this is also one of the most powerful marketing tools that exist today. You will gain massive visibility, especially for searches with commercial intent related to your service or product."
+        },
+        "WEBSITE": {
+            "TITLE": "Création et Révision Des Sites Web",
+            "DESCRIPTION": "A landing page is where all your prospects converge to discover your service. A landing page that grabs and retains attention is crucil to increase sales and improve a business. If you already have one, we will go through it and see where we can improve it."
+        }
+    },
     "NEWSLETTER":{
-        "HEADLINE" : "Recevez les dernières informations sur notre marketing",
-        "DESCRIPTION" : "Inscrivez-vous à notre newsletter et ne manquez plus rien. Nous vous promettons de ne pas vous envoyer de spam !",
+        "HEADLINE" : "La Newsletter du Marketing",
+        "DESCRIPTION" : "Votre avantage en business. Abonnez-vous maintenant pour recevoir chaque semaine du contenu centré autour du marketing, des affaires, du networking et bien plus encore.",
         "BUTTON" : "S'abonner"
     },
     "HEROCONTACT": {
-        "HEADER": "Rejoignez Notre Communauté",
-        "HEADLINE": "Prêt à faire passer votre entreprise au niveau supérieur ? Rejoignez notre communauté de professionnels avant-gardistes et accédez à des outils, des informations et des opportunités exclusives conçus pour vous aider à croître.",
-        "BUTTON": "Rejoignez-nous"
+        "HEADER": "Obtenir Une Consultation Gratuite",
+        "HEADLINE": "Prêt à découvrir comment nous pouvons faire passer votre entreprise au niveau supérieur? Remplissez alors le formulaire en cliquant sur le bouton ci-dessous. Vous recevrez gratuitement une analyse marketing détaillée - et nous garantissons une réponse dans 48 heures.",
+        "BUTTON": "Oui! Je veux ça"
     },
     "CONTACT": {
         "TITLE": "Contacter nous",
