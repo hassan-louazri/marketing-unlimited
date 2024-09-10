@@ -1,46 +1,65 @@
+$font-radius: 0.5rem;
 h1 {
     font-weight: 700;
 }
 
 .services {
-    background-color: #f0f0f0;
+    background-color: #fff;
     padding-bottom: 20px;
 }
 .container {
     width: 70%;
 }
+
 .service-card {
-    background-color: transparent;
+    background-color: #f0f0f0;
     display: flex;
     flex-direction: row;
     border: none;
-    margin: 40px;
-    width: 100%; 
+    width: 100%;
+    margin-bottom: 2rem;
 }
 
 .card-img-holder {
-    flex: 1;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 20%;
 
     img {
-        border-radius: 25px;
         width: 100%;
-        height: auto;
+        object-fit: cover;
+        display: block;
+        border-radius: $font-radius 0 0 $font-radius;
     }
 }
 
 .card-body {
-    flex: 2;
     display: flex;
     flex-direction: column; 
     justify-content: center;
     padding: 20px;
+    width: 80%;
+    .card-content .card-title{
+        font-weight: 600;
+    }
 }
 
-@media (max-width: 992px) {
-    .service-card {
-        flex-direction: column;
+@media (max-width: 1400px) {
+    .card-container{
+        display: flex;
+        justify-content: center;
     }
+    .service-card {
+        width: 60%;
+        flex-direction: column;
+        .card-img-holder{
+            width: 100%;
+            img{
+                border-radius: $font-radius $font-radius 0 0;
+            }
+        }
+        .card-body{
+            width: 100%;
+        }
+    }
+
 }

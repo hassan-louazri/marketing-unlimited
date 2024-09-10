@@ -4,10 +4,10 @@
             <h1 class="p-3 m-0">{{ "SERVICES.TITLE" | translate}}</h1>
         </div>
     
-        <div class="card-container">
+        <div class="d-flex justify-content-center flex-wrap">
             <div class="card service-card" *ngFor="let service of services">
                 <div class="card-img-holder">
-                    <img class="card-img-top" [src]="service.image" alt="Card image cap" />
+                    <img class="card-img-cap" [src]="service.image" alt="Card image cap" />
                 </div>
                 <div class="card-body">
                     <div class="card-content">
@@ -18,4 +18,4 @@
             </div>
         </div>
     </div>
-</div>
+</div> 
