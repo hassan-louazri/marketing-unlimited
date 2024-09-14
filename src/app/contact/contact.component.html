@@ -1,7 +1,7 @@
 <div class="container" id="contact-form">
     <h2 class="text-center my-5">{{ 'CONTACT.TITLE' | translate }}</h2>
 
-    <form #contactForm="ngForm" class="my-5 d-flex justify-content-center" (ngSubmit)="onSubmit(contactForm)">
+    <form #contactForm="ngForm" class="my-5 d-flex justify-content-center" (ngSubmit)="onSubmit(contactForm, content)">
         <div class="card custom-radius width-540">
             <div class="card-body  custom-radius-top-leftandright ">
                 <p>{{ 'CONTACT.ONE' | translate }}</p>
@@ -17,39 +17,72 @@
             <div class="d-block mt-2 mx-3 pb-3">
                 <div class="form-group">
                     <label for="name">{{ 'CONTACT.FORM.FULLNAME' | translate }}</label>
-                    <input type="text" id="name" name="name" class="form-control" placeholder="John Dupont" ngModel>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="{{ 'CONTACT.PLACEHOLDERS.FULLNAME' | translate }}" ngModel>
                 </div>
+
                 <div class="form-group my-3">
                     <label for="email">{{ 'CONTACT.FORM.EMAIL' | translate }} <span class="text-danger">*</span></label>
-                    <input type="email" name="email" id="email" class="form-control" ngModel placeholder="fullname@example.com" required>
-                    <div *ngIf="contactForm.submitted && !contactForm.controls['email']?.valid" class="text-danger">
-                        Email is required
+                    <input type="email" name="email" id="email" class="form-control" ngModel placeholder="{{ 'CONTACT.PLACEHOLDERS.EMAIL' | translate }}" required>
+                    <div *ngIf="contactForm.submitted && !contactForm.controls['email']?.valid" class="alert alert-danger d-flex align-items-center mt-2">
+                        <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                        <span>{{ 'CONTACT.REQUIRED.EMAIL' | translate }}</span>
                     </div>
                 </div>
-                <div class="form-group mb-3">
-                    <label for="company">{{ 'CONTACT.FORM.COMPANY' | translate }}</label>
-                    <input type="text" id="company" name="company" class="form-control" placeholder="My Company" ngModel>
-                </div>
+
                 <div class="form-group mb-3">
                     <label for="phone">{{ 'CONTACT.FORM.PHONE' | translate }}</label>
-                    <input type="text" id="phone" name="phone" class="form-control" placeholder="+33 7 00 11 55 88" ngModel>
+                    <input type="text" id="phone" name="phone" class="form-control" placeholder="{{ 'CONTACT.PLACEHOLDERS.PHONE' | translate }}" ngModel>
                 </div>
+
+                <div class="form-group mb-3">
+                    <label for="company">{{ 'CONTACT.FORM.COMPANY' | translate }}</label>
+                    <input type="text" id="company" name="company" class="form-control" placeholder="{{ 'CONTACT.PLACEHOLDERS.COMPANY' | translate }}" ngModel>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="find">{{ 'CONTACT.FORM.FOUND' | translate }}</label>
+                    <input type="text" id="find" name="find" class="form-control" placeholder="{{ 'CONTACT.PLACEHOLDERS.FOUND' | translate }}" ngModel>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="adspend">{{ 'CONTACT.FORM.ADSPEND' | translate }}</label>
+                    <input type="text" id="adspend" name="adspend" class="form-control" placeholder="{{ 'CONTACT.PLACEHOLDERS.ADSPEND' | translate }}" ngModel>
+                </div>
+
                 <div class="form-group mb-3">
                     <label for="subject">{{ 'CONTACT.FORM.SUBJECT' | translate }} <span class="text-danger">*</span></label>
-                    <input type="text" id="subject" name="subject" class="form-control" ngModel placeholder="How can you help me get more clients?" required>
-                    <div *ngIf="contactForm.submitted && !contactForm.controls['subject']?.valid" class="text-danger">
-                    Subject is required.
+                    <input type="text" id="subject" name="subject" class="form-control" ngModel placeholder="{{ 'CONTACT.PLACEHOLDERS.SUBJECT' | translate }}" required>
+                    <div *ngIf="contactForm.submitted && !contactForm.controls['subject']?.valid" class="alert alert-danger d-flex align-items-center mt-2">
+                        <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                        <span>{{ 'CONTACT.REQUIRED.SUBJECT' | translate }}</span>
                     </div>
                 </div>
+
                 <div class="form-group mb-3">
                     <label for="message">{{ 'CONTACT.FORM.MESSAGE' | translate }} <span class="text-danger">*</span></label>
-                    <textarea id="message" name="message" class="form-control" rows="5" ngModel placeholder="Explain what you want to gain from working with us" required></textarea>
-                    <div *ngIf="contactForm.submitted && !contactForm.controls['message']?.valid" class="text-danger">
-                    Message is required.
+                    <textarea id="message" name="message" class="form-control" rows="5" ngModel placeholder="{{ 'CONTACT.PLACEHOLDERS.MESSAGE' | translate }}" required></textarea>
+                    <div *ngIf="contactForm.submitted && !contactForm.controls['message']?.valid" class="alert alert-danger d-flex align-items-center mt-2">
+                        <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                        <span>{{ 'CONTACT.REQUIRED.MESSAGE' | translate }}</span>
                     </div>
                 </div>
+                
                 <button type="submit" class="btn btn-primary mt-3 w-100">{{ 'CONTACT.FORM.SUBMIT' | translate }}</button>
             </div>
         </div>
     </form>
 </div>
+
+<!-- Modal after submit -->
+<ng-template #content let-c="close" let-d="dismiss">
+	<div class="modal-header">
+		<h4 class="modal-title" id="modal-basic-title">{{ 'CONTACT.MODAL.TITLE' | translate }}</h4>
+		<button type="button" class="btn-close" aria-label="Close" (click)="d('Cross click')"></button>
+	</div>
+	<div class="modal-body">
+		<p>{{ 'CONTACT.MODAL.BODY' | translate }}</p>
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-outline-secondary" (click)="c('Close click')">Close</button>
+	</div>
+</ng-template>

@@ -124,10 +124,31 @@
             "FULLNAME": "Full name",
             "EMAIL": "Email",
             "COMPANY": "Company name",
+            "FOUND": "How did you find us?", 
+            "ADSPEND": "How much are you spending on ads per month?",
             "PHONE": "Phone number",
             "SUBJECT": "What is your most important question?",
             "MESSAGE": "Message",
             "SUBMIT": "Submit"
+        },
+        "PLACEHOLDERS": {
+            "FULLNAME": "John Dupont",
+            "EMAIL": "fullname@company.com",
+            "COMPANY": "My Company",
+            "FOUND": "Neighbour told me about you guys.",
+            "ADSPEND": "Around 2000$/month",
+            "PHONE": "+33 7 58 14 11 52",
+            "SUBJECT": "How can you help me get more clients?",
+            "MESSAGE": "Explain what you want to gain from working with us."
+        },
+        "REQUIRED": {
+            "EMAIL": "Email is required.",
+            "SUBJECT": "Question is required.",
+            "MESSAGE": "Message is required."
+        },
+        "MODAL": {
+            "TITLE": "Thank you for choosing us",
+            "BODY": "Your request has been submitted successfully. As promised we will get back to you within 48 hours max."
         }
     }
 }

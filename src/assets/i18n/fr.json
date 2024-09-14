@@ -124,10 +124,31 @@
             "FULLNAME": "Nom complet",
             "EMAIL": "Courriel",
             "COMPANY": "Nom d'entreprise",
+            "FOUND": "Comment vous nous avez trouvé ?", 
+            "ADSPEND": "Combien depensez-vous sur les publicités par mois ?",
             "PHONE": "Téléphone",
             "SUBJECT": "Quelle est votre question la plus importante ?",
             "MESSAGE": "Message",
             "SUBMIT": "Soumettre"
+        },
+        "PLACEHOLDERS": {
+            "FULLNAME": "John Dupont",
+            "EMAIL": "nomprenom@entreprise.com",
+            "COMPANY": "Mon entreprise",
+            "FOUND": "À travers une recherche google.",
+            "ADSPEND": "2000€/month",
+            "PHONE": "+33 7 58 14 11 52",
+            "SUBJECT": "Comment pouvez-vous m'aider ?",
+            "MESSAGE": "Expliquer nous ce que vous voudriez avoir en travaillant avec nous."
+        },
+        "REQUIRED": {
+            "EMAIL": "Email requis.",
+            "SUBJECT": "Question requise.",
+            "MESSAGE": "Message requis."
+        },
+        "MODAL": {
+            "TITLE": "Merci de nous avoir choisi",
+            "BODY": "Votre requête a été soumise avec succes. Nous allons revenir vers vous dans 48 heures max."
         }
     }
 }
