@@ -23,10 +23,12 @@ h1 {
 
 .card-img-holder {
     display: flex;
-    width: 20%;
-
+    width: 40%;
+    overflow: hidden;
+    height: 285px;
+  
     img {
-        width: 100%;
+        width: 100%;    
         object-fit: cover;
         display: block;
         border-radius: $font-radius 0 0 $font-radius;
@@ -53,7 +55,7 @@ h1 {
         justify-content: center;
     }
     .service-card {
-        width: 100%;
+        width: 400px;
         flex-direction: column;
         .card-img-holder{
             width: 100%;
@@ -62,7 +64,9 @@ h1 {
             }
         }
         .card-body{
+            display: block;
             width: 100%;
+    
         }
     }
 

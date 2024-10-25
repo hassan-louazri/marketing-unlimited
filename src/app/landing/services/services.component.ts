@@ -8,17 +8,17 @@ import { Component } from '@angular/core';
 export class ServicesComponent {
   services = [
     {
-      image: "../../../assets/images/facebook-ads.jpg",
+      image: "../../../assets/images/adves_media.jpg",
       title: "SERVICES.META.TITLE",
       description: "SERVICES.META.DESCRIPTION"
     },
     {
-      image: "../../../assets/images/writing.jpeg",
+      image: "../../../assets/images/marketing-idea.jpg",
       title: "SERVICES.CONTENT.TITLE",
       description: "SERVICES.CONTENT.DESCRIPTION"
     },
     {
-      image: "../../../assets/images/email-marketing.jpg",
+      image: "../../../assets/images/email_markt.jpg",
       title: "SERVICES.EMAIL.TITLE",
       description: "SERVICES.EMAIL.DESCRIPTION"
     },
