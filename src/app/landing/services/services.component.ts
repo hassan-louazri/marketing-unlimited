@@ -8,27 +8,27 @@ import { Component } from '@angular/core';
 export class ServicesComponent {
   services = [
     {
-      image: "../../../assets/images/free-time.jpeg",
+      image: "../../../assets/images/facebook-ads.jpg",
       title: "SERVICES.META.TITLE",
       description: "SERVICES.META.DESCRIPTION"
     },
     {
-      image: "../../../assets/images/free-time.jpeg",
+      image: "../../../assets/images/writing.jpeg",
       title: "SERVICES.CONTENT.TITLE",
       description: "SERVICES.CONTENT.DESCRIPTION"
     },
     {
-      image: "../../../assets/images/free-time.jpeg",
+      image: "../../../assets/images/email-marketing.jpg",
       title: "SERVICES.EMAIL.TITLE",
       description: "SERVICES.EMAIL.DESCRIPTION"
     },
     {
-      image: "../../../assets/images/free-time.jpeg",
+      image: "../../../assets/images/google-ads.jpg",
       title: "SERVICES.GOOGLE.TITLE",
       description: "SERVICES.GOOGLE.DESCRIPTION"
     },
     {
-      image: "../../../assets/images/free-time.jpeg",
+      image: "../../../assets/images/website.jpg",
       title: "SERVICES.WEBSITE.TITLE",
       description: "SERVICES.WEBSITE.DESCRIPTION"
     }
