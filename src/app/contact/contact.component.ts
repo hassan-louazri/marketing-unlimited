@@ -27,7 +27,7 @@ export class ContactComponent {
   onSubmit(form: NgForm, content: any) {
     if(form.valid) {
       // TODO: write form to excel sheet
-
+      console.log('form: ', form.value);
       this.modalService.open(content);
       form.resetForm();
     }
