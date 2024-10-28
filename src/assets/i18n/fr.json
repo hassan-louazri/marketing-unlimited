@@ -1,4 +1,8 @@
 {
+    "WEBSITE_INFO": {
+        "TITLE": "FocusedResultMedia",
+        "DESCRIPTION": "FocusedResultMedia est une agence de marketing locale qui aide les entreprises à se développer en fournissant des services de marketing professionnels. Nous sommes spécialisés dans la création de stratégies publicitaires sur mesure qui garantissent des résultats pour nos clients."
+    },
     "HEADER": {
         "HOME": "Accueil",
         "BLOG": "Blog",
