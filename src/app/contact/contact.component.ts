@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { NgbModal, NgbModalConfig } from '@ng-bootstrap/ng-bootstrap';
+import { FormControlService } from '../core/form-control.service';
 
 @Component({
   selector: 'app-contact',
@@ -13,7 +14,7 @@ export class ContactComponent {
 
   // selectedAdSpend: string = "0 - 500";
 
-  constructor(private modalService: NgbModal, config: NgbModalConfig) {
+  constructor(private modalService: NgbModal, config: NgbModalConfig, private formSender: FormControlService) {
     config.animation = true;
     config.backdrop = 'static';
     config.keyboard = false;
@@ -28,6 +29,8 @@ export class ContactComponent {
     if(form.valid) {
       // TODO: write form to excel sheet
       console.log('form: ', form.value);
+      console.log('typeof form: ', typeof form.value);
+      this.formSender.sendFormData(form.value);
       this.modalService.open(content);
       form.resetForm();
     }
