@@ -30,7 +30,10 @@ export class ContactComponent {
       // TODO: write form to excel sheet
       console.log('form: ', form.value);
       console.log('typeof form: ', typeof form.value);
-      this.formSender.sendFormData(form.value);
+      this.formSender.sendFormData(form.value).subscribe(res => {
+        console.log(res);
+        console.log("success");
+      });
       this.modalService.open(content);
       form.resetForm();
     }
