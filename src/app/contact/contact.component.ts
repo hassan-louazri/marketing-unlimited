@@ -25,19 +25,14 @@ export class ContactComponent {
   //   this.selectedAdSpend = option;
   // }
   
-  onSubmit(form: NgForm, content: any) {
+  onSubmit(form: NgForm, content: any, errorContent: any) {
     if(form.valid) {
-      // TODO: write form to excel sheet
-      console.log('form: ', form.value);
-      console.log('typeof form: ', typeof form.value);
       this.formSender.sendFormData(form.value)
         .subscribe({
-          next: (res) => {
-            console.log(res);
-            console.log("success");},
-          error: (error) => console.log(error)
+          next: () => this.modalService.open(content),
+          error: (error) => {console.log(error); this.modalService.open(errorContent);}
         });
-      this.modalService.open(content);
+      
       form.resetForm();
     }
   }

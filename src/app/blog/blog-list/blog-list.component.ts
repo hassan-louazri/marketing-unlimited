@@ -10,7 +10,31 @@ export class BlogListComponent {
   howMuchToCutInDescription : number = 200;
   blogs = [
     {
-      id: 1,
+      id: 8,
+      title: 'Get More Sales By Writing A Perfect Call-To-Action',
+      description: 'Having a strong CTA strategy helps in directing your clients actions, making them do exactly what you want and avoiding any potential loss in sales.',
+      file: 'article-2024-10-25.md',
+      image: '../../../assets/images/article.jpg',
+      dateCreated: '25 OCT 2024'
+    },
+    {
+      id: 7,
+      title: 'Proven Strategies To Skyrocket Your Website Traffic in 2024 For Free',
+      description: 'Learn how to attract prospects to your platform organically and win more money using these simple cheat codes.',
+      file: 'article-2024-10-15.md',
+      image: '../../../assets/images/article.jpg',
+      dateCreated: '15 OCT 2024'
+    },
+    {
+      id: 6,
+      title: 'Earn More Money By Writing Better Stuff: The Undefeated BAR Test',
+      description: 'Looking at your content through the BAR Test will help you improve your writing tremendously and make you a gigantic amount of money.',
+      file: 'article-2024-09-20.md',
+      image: '../../../assets/images/article.jpg',
+      dateCreated: '20 SEP 2024'
+    },
+    {
+      id: 5,
       title: 'Avoid This Mistake in Business at All Cost',
       description: 'In this article, we will break down how to avoid making this brutal mistake and highlight the key to your long-term success.',
       file: 'article-2024-09-05.md',
@@ -18,7 +42,7 @@ export class BlogListComponent {
       dateCreated: '05 SEP 2024',
     },
     {
-      id: 2,
+      id: 4,
       title: 'A Simple Step To Become Top Choice in Your Market',
       description: 'In this article, we will talk about how to become and stay the top choice in your market.',
       file: 'article-2024-08-29.md',
@@ -34,7 +58,7 @@ export class BlogListComponent {
       dateCreated: '16 AUG 2024',
     },
     {
-      id: 4,
+      id: 2,
       title: 'Reach Ultimate Success By Leveraging This One Valuable Asset',
       description: 'In this article, we will discuss how to project the perfect image for your audience to make them engage with your content.',
       file: 'article-2024-07-24.md',
@@ -42,7 +66,7 @@ export class BlogListComponent {
       dateCreated: '24 JUL 2024',
     },
     {
-      id: 5,
+      id: 1,
       title: 'Discover The Secret about Marketing That Everyone is Hiding',
       description: "In this article, I'll explain why most businesses falter at their first hurdle, how you can push through it, and what it takes to achieve your success.",
       file: 'article-2024-07-04.md',
@@ -53,29 +77,31 @@ export class BlogListComponent {
   
   Latestblogs = [
     {
-      id: 1,
-      title: 'Avoid This Mistake in Business at All Cost',
-      description: 'In this article, we will break down how to avoid making this brutal mistake and highlight the key to your long-term success.',
-      file: 'article-2024-09-05.md',
+      id: 8,
+      title: 'Get More Sales By Writing A Perfect Call-To-Action',
+      description: 'Writing a tailored CTA helps in directing your clients actions, making them do exactly what you want and avoiding any potential confusion.',
+      file: 'article-2024-10-25.md',
       image: '../../../assets/images/article.jpg',
-      dateCreated: '05 SEP 2024',
+      dateCreated: '25 OCT 2024'
     },
     {
-      id: 2,
-      title: 'A Simple Step To Become Top Choice in Your Market',
-      description: 'In this article, we will talk about how to become and stay the top choice in your market.',
-      file: 'article-2024-08-29.md',
+      id: 7,
+      title: 'Proven Strategies To Skyrocket Your Website Traffic in 2024 For Free',
+      description: 'Learn how to attract prospects to your platform organically and win more money using these simple cheat codes.',
+      file: 'article-2024-10-15.md',
       image: '../../../assets/images/article.jpg',
-      dateCreated: '29 AUG 2024',
+      dateCreated: '15 OCT 2024'
     },
     {
-      id: 3,
-      title: "If You Can't Find Enough Clients, This is For You",
-      description: 'In this article, you will learn how a hungry crowd can supercharge your business and can GUARANTEE making more money than you know what to do with.',
-      file: 'article-2024-08-16.md',
+      id: 6,
+      title: 'Earn More Money By Writing Better Stuff: The Undefeated BAR Test',
+      description: 'Looking at your content through the BAR Test will help you improve your writing tremendously and make you a gigantic amount of money.',
+      file: 'article-2024-09-20.md',
       image: '../../../assets/images/article.jpg',
-      dateCreated: '16 AUG 2024',
-    }
+      dateCreated: '20 SEP 2024'
+    },
+    
+    
   ];
 
   share_func(blog: any): void{

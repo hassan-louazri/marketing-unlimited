@@ -1,7 +1,7 @@
 <div class="container" id="contact-form">
     <h2 class="text-center my-5">{{ 'CONTACT.TITLE' | translate }}</h2>
 
-    <form #contactForm="ngForm" class="my-5 d-flex justify-content-center" (ngSubmit)="onSubmit(contactForm, content)">
+    <form #contactForm="ngForm" class="my-5 d-flex justify-content-center" (ngSubmit)="onSubmit(contactForm, content, errorContent)">
         <div class="card custom-radius width-540">
             <div class="card-body  custom-radius-top-leftandright ">
                 <p>{{ 'CONTACT.ONE' | translate }}</p>
@@ -81,6 +81,20 @@
 	</div>
 	<div class="modal-body">
 		<p>{{ 'CONTACT.MODAL.BODY' | translate }}</p>
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-outline-secondary" (click)="c('Close click')">Close</button>
+	</div>
+</ng-template>
+
+<!-- Error Modal after submit -->
+<ng-template #errorContent let-c="close" let-d="dismiss">
+	<div class="modal-header">
+		<h4 class="modal-title" id="modal-basic-title">{{ 'CONTACT.ERROR.TITLE' | translate }}</h4>
+		<button type="button" class="btn-close" aria-label="Close" (click)="d('Cross click')"></button>
+	</div>
+	<div class="modal-body">
+		<p>{{ 'CONTACT.ERROR.BODY' | translate }}</p>
 	</div>
 	<div class="modal-footer">
 		<button type="button" class="btn btn-outline-secondary" (click)="c('Close click')">Close</button>

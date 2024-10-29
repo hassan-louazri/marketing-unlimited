@@ -153,6 +153,10 @@
         "MODAL": {
             "TITLE": "Merci de nous avoir choisi",
             "BODY": "Votre requête a été soumise avec succes. Nous allons revenir vers vous dans 48 heures max."
+        },
+        "ERROR": {
+            "TITLE": "Quelque chose ne marche pas",
+            "BODY": "Merci de réessayer plus tard. Vous pouvez aussi nous contacter pas courriel si l'erreur persiste."
         }
     }
 }
