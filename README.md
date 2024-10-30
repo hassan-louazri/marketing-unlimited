@@ -29,7 +29,7 @@ Have questions or feedback? Feel free to reach out:
 - Improve readability by changing variables names when necessary and add comments
 - Move all functionality into services
 
-### Blog improvements
+### Blog improvements (SIGNED TO OMAR) / NOT DONE YET
 - Improve blog list style 
 - Improve blog post style
 - Add action steps for readers to improve orientation and user experience
@@ -41,7 +41,7 @@ Have questions or feedback? Feel free to reach out:
 - Send welcome email automaticaly after register to confirm valid email
 - Add captcha to secure from mailing list spam
 
-### Contact Form
+### Contact Form (SIGNED TO OMAR) / NOT DONE YET
 - Improve contact form style
 - Split full name field into two fields (first and last name)
 - Add email validation for email field (with regexp)
