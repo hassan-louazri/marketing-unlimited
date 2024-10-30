@@ -40,3 +40,12 @@ Have questions or feedback? Feel free to reach out:
 - Add functionality to register user email in a google sheet
 - Send welcome email automaticaly after register to confirm valid email
 - Add captcha to secure from mailing list spam
+
+### Contact Form
+- Improve contact form style
+- Split full name field into two fields (first and last name)
+- Add email validation for email field (with regexp)
+- Add country code for phone number field
+- Add suggestions as dropdown list for "how did you find us?"
+- Add dropdown list selection for adspend field
+- Edit submit button style to look like main button (hero button)
