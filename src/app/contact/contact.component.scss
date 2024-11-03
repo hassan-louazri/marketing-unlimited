@@ -1,44 +1,220 @@
 $gray-color: #f0f0f0;
+$white-color: #fff;
+$blue-color: #4169e1;
 $rounded-3:0.5rem;
 
-.custom-radius{
-    border-radius: $rounded-3;
-}
-.custom-radius-top-leftandright{
-    border-radius: $rounded-3 $rounded-3 0 0;
-}
-.width-540{
-    width: 680px;
-}
-.card-body{
-    background-color: $gray-color;
-}
 
-h2 {
-    font-weight: 700;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-label {
-    font-weight: 600;
+/*  ------------------------  */
+.text-holder{
+    padding: 35px 30px;
+    background: $gray-color;
 }
-
-.btn {
-    font-weight: 700;
+.body-class{
+  display: flex;
+  margin: 45px 0px;
+  padding: 0 10px;
+  background: $white-color;
+  align-items: center;
+  justify-content: center;
 }
-
-.alert {
-    padding: 10px;
-    border-radius: 5px;
-    font-weight: bold;
+::selection{
+  color: $white-color;
+  background: $blue-color;
+}
+.wrapper{
+  width: 900px;
+  background: $white-color;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+.wrapper header{
+  font-size: 22px;
+  font-weight: 600;
+  padding: 20px 30px;
+  border-bottom: 1px solid $gray-color;
+}
+.wrapper form{
+  margin: 35px 30px;
+}
+.wrapper form.disabled{
+  pointer-events: none;
+  opacity: 0.7;
+}
+form .dbl-field{
+  display: flex;
+  margin-bottom: 25px;
+  justify-content: space-between;
+}
+.dbl-field .field{
+  height: 50px;
+  display: flex;
+  position: relative;
+  width: calc(100% / 2 - 13px);
+}
+.wrapper form i{
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  color: #ccc;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+form .field input,
+form .message textarea,
+form .field select{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 0 18px 0 48px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  &:not(:placeholder-shown) + i {
+    color: $blue-color; // color when the input is filled
   }
-  
-  .alert-danger {
-    background-color: #f8d7da;
-    color: #721c24;
-    border: 1px solid #f5c6cb;
+}
+.field input::placeholder,
+.message textarea::placeholder{
+  color: #ccc;
+}
+.field input:focus,
+.message textarea:focus ,
+.field select:focus{
+  padding-left: 47px !important;
+  border: 2px solid $blue-color !important;
+}
+.field select{
+    background-color: $white-color;
+    color: #ccc; // Default color for the placeholder
+
+    &:focus,
+    &:active {
+        color: #000; // Sets the color to #000 when any option is selected
+    }
+    &.active-icon {
+        color: #000 !important; // Color when an option is selected
+       
+    }
+}
+.field {
+    i {
+        color: #ccc; // Default icon color
+
+        &.active-icon {
+            color: $blue-color !important; // Color when an option is selected
+           
+        }
+    }
+}
+
+.field input:focus ~ i,
+.message textarea:focus ~ i{
+  color: $blue-color;
+}
+form .message{
+  position: relative;
+}
+form .message i{
+  top: 30px;
+  font-size: 20px;
+}
+form .message textarea{
+  min-height: 130px;
+  max-height: 230px;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 15px 20px 0 48px;
+}
+form .message textarea::-webkit-scrollbar{
+  width: 0px;
+}
+.message textarea:focus{
+  padding-top: 14px;
+}
+form .button-area{
+  margin: 25px 0;
+  display: flex;
+  align-items: center;
+}
+.button-area button{
+  color: $white-color;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding-right: 20px;
+  background: $blue-color;
+  transition: all 0.3s ease;
+  svg{
+    width: 50px;
+    height: 50px;
+    color: $white-color;
   }
-  
-  .bi-exclamation-triangle-fill {
-    font-size: 1.2rem;
+}
+.button-area button:hover{
+  background: darken($blue-color, 15%);
+}
+.button-area span{
+  font-size: 17px;
+  margin-left: 30px;
+  display: none;
+}
+.spinner-border {
+  width: 1rem;
+  height: 1rem;
+  border-width: 0.2em;
+}
+
+@media (min-width: 1640px){
+  .wrapper{
+    width: 80%;
   }
-  
+  .wrapper form{
+    width: 100%;
+  }
+  .container-custom{
+    width: 100%;
+    display: flex;
+  }
+}
+
+@media (max-width: 600px){
+  .wrapper header{
+    text-align: center;
+  }
+  .wrapper form{
+    margin: 35px 20px;
+  }
+  form .dbl-field{
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+  form .dbl-field .field{
+    width: 100%;
+    height: 45px;
+    margin-bottom: 20px;
+  }
+  form .message textarea{
+    resize: none;
+  }
+  form .button-area{
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  .button-area button{
+    width: 100%;
+    padding: 11px 0;
+    font-size: 16px;
+  }
+  .button-area span{
+    margin: 20px 0 0;
+    text-align: center;
+  }
+}

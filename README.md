@@ -42,10 +42,10 @@ Have questions or feedback? Feel free to reach out:
 - Add captcha to secure from mailing list spam
 
 ### Contact Form (SIGNED TO OMAR) / NOT DONE YET
-- Improve contact form style -NEXT TARGET
-- Split full name field into two fields (first and last name) -NEXT TARGET
-- Add email validation for email field (with regexp)
-- Add country code for phone number field
-- Add suggestions as dropdown list for "how did you find us?"
-- Add dropdown list selection for adspend field -NEXT TARGET
-- Edit submit button style to look like main button (hero button)
+- Improve contact form style - DONE
+- Split full name field into two fields (first and last name) - DONE
+- Add email validation for email field (with regexp) - NEXT TARGET
+- Add country code for phone number field - NEXT TARGET
+- Add suggestions as dropdown list for "how did you find us?" - NEXT TARGET
+- Add dropdown list selection for adspend field - DONE
+- Edit submit button style to look like main button (hero button) - SIGNED TO @hassan-louazri

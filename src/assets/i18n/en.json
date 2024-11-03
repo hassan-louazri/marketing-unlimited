@@ -125,7 +125,8 @@
         "SEVEN": "Sounds good?",
         "EIGHT": "Fill this form then: ",
         "FORM": {
-            "FULLNAME": "Full name",
+            "FIRST_NAME": "First name",
+            "LAST_NAME": "Last name",
             "EMAIL": "Email",
             "COMPANY": "Company name",
             "FOUND": "How did you find us?", 

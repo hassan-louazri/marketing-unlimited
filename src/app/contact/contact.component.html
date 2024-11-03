@@ -1,3 +1,5 @@
+<!--
+
 <div class="container" id="contact-form">
     <h2 class="text-center my-5">{{ 'CONTACT.TITLE' | translate }}</h2>
 
@@ -72,9 +74,111 @@
         </div>
     </form>
 </div>
+-->
+
+<div class="body-class">
+    <div class="wrapper">
+        <header>{{ 'CONTACT.TITLE' | translate }}</header>
+        
+        <div class="container-custom">
+            <div class="text-holder">
+                <p>{{ 'CONTACT.ONE' | translate }}</p>
+                <p>{{ 'CONTACT.TWO' | translate }}</p>
+                <p>{{ 'CONTACT.THREE' | translate }}</p>
+                <p>{{ 'CONTACT.FOUR' | translate }}</p>
+                <p>{{ 'CONTACT.FIVE' | translate }}</p>
+                <p>{{ 'CONTACT.SIX' | translate }}</p>
+                <p>{{ 'CONTACT.SEVEN' | translate }}</p>
+                <p>{{ 'CONTACT.EIGHT' | translate }}</p>
+
+            </div>
+       
+            <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm, content, errorContent)">
+            <div class="dbl-field">
+                <div class="field">
+                <input type="text" [placeholder]="'CONTACT.FORM.FIRST_NAME' | translate" />
+                <i class='fas fa-user'></i>
+                </div>
+                <div class="field">
+                <input type="text" [placeholder]="'CONTACT.FORM.LAST_NAME' | translate">
+                <i class='fas fa-user'></i>
+                </div>
+            </div>
+            <div class="dbl-field">
+                <div class="field">
+                <input type="text" [placeholder]="'CONTACT.FORM.EMAIL' | translate">
+                <i class='fas fa-envelope'></i>
+                </div>
+                <div class="field">
+                    <input type="text" [placeholder]="'CONTACT.FORM.COMPANY' | translate">
+                    <i class='fas fa-globe'></i>
+                </div>
+            </div>
+            <div class="dbl-field">
+                <div class="field">
+                <input type="text" name="name" [placeholder]="'CONTACT.FORM.PHONE' | translate">
+                <i class='fas fa-phone-alt'></i>
+                </div>
+                <div class="field">
+                <input type="text" name="email" [placeholder]="'CONTACT.FORM.FOUND' | translate">
+                <i class='fas fa-globe'></i>
+                </div>
+            </div>
+            <div class="dbl-field">
+                <div class="field">
+                    <i class="fas fa-hand-holding-usd" [ngClass]="{ 'active-icon': selectedAdSpend !== '' }"></i>
+                    <select [(ngModel)]="selectedAdSpend" (change)="selectAdSpend(selectedAdSpend)" name="selectAdSpend" [ngClass]="{ 'active-icon': selectedAdSpend !== '' }">
+                        <option value="" disabled selected hidden>{{ 'CONTACT.FORM.ADSPEND' | translate }}</option>
+                        <option *ngFor="let option of options" [value]="option">{{ option }}</option>
+                    </select>
+                </div>
+                
+                
+                <div class="field">
+                <input type="text" [placeholder]="'CONTACT.FORM.SUBJECT' | translate">
+                <i class="fas fa-question-circle"></i>
+                </div>
+            </div>
+            <div class="message">
+                <textarea [placeholder]="'CONTACT.PLACEHOLDERS.MESSAGE' | translate"  ></textarea>
+                <i class="material-icons">message</i>
+            </div>
+            <div class="button-area">
+                <button type="submit" [disabled]="isSubmitting">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1080" height="1080" viewBox="0 0 1080 1080" xml:space="preserve">
+                        <desc>Created with Fabric.js 5.2.4</desc>
+                        <defs>
+                        </defs>
+                        <rect x="0" y="0" width="100%" height="100%" fill="transparent"></rect>
+                        <g transform="matrix(1 0 0 1 540 540)" id="a3a2e658-a75d-4204-9028-a79f212ee781"  >
+                        <rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; visibility: hidden;" vector-effect="non-scaling-stroke"  x="-540" y="-540" rx="0" ry="0" width="1080" height="1080" />
+                        </g>
+                        <g transform="matrix(1 0 0 1 540 540)" id="45cfe7b0-5103-410f-8092-80eb987b456e"  >
+                        </g>
+                        <g transform="matrix(1 0 0 1 540 540)" id="f90d747b-3e16-4a43-aacc-2a1f2349a553"  >
+                        <path style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-256.06, -256.02)" d="M 440 6.5 L 24 246.4 C -10.399999999999999 266.3 -7.100000000000001 317.2 29.7 332.3 L 144 379.6 L 144 464 C 144 510.4 203.2 529.5 230.6 492.6 L 274.4 433.5 L 386.29999999999995 479.7 C 392.19999999999993 482.09999999999997 398.4 483.3 404.59999999999997 483.3 C 412.79999999999995 483.3 420.9 481.2 428.2 477.1 C 441 469.90000000000003 449.8 457.1 452.09999999999997 442.6 L 511.49999999999994 55.400000000000034 C 517.5999999999999 15.300000000000033 474.59999999999997 -13.399999999999963 439.99999999999994 6.5000000000000355 z M 192 464 L 192 399.4 L 228.6 414.5 L 192 464 z M 404.6 435.3 L 250.8 371.8 L 391 169.5 C 401.7 154 381.5 136 367.3 148.3 L 155.8 332.6 L 48 288 L 464 48 L 404.6 435.3 z" stroke-linecap="round" />
+                        </g>
+                    </svg>
+                    <ng-container *ngIf="!isSubmitting; else loading">
+                        {{ 'CONTACT.FORM.SUBMIT' | translate }}
+                    </ng-container>
+                    <ng-template #loading>
+                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                        Loading...
+                    </ng-template>
+                </button>
+                <span></span>
+            </div>
+            </form>
+         </div>
+      </div>
+    
+    
+</div>
+
 
 <!-- Modal after submit -->
-<ng-template #content let-c="close" let-d="dismiss">
+<ng-template #content let-c="close" let-d="dismiss" style="padding: 22px;">
 	<div class="modal-header">
 		<h4 class="modal-title" id="modal-basic-title">{{ 'CONTACT.MODAL.TITLE' | translate }}</h4>
 		<button type="button" class="btn-close" aria-label="Close" (click)="d('Cross click')"></button>
@@ -88,7 +192,7 @@
 </ng-template>
 
 <!-- Error Modal after submit -->
-<ng-template #errorContent let-c="close" let-d="dismiss">
+<ng-template #errorContent let-c="close" let-d="dismiss"  style="padding: 22px;">
 	<div class="modal-header">
 		<h4 class="modal-title" id="modal-basic-title">{{ 'CONTACT.ERROR.TITLE' | translate }}</h4>
 		<button type="button" class="btn-close" aria-label="Close" (click)="d('Cross click')"></button>

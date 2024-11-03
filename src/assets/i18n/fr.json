@@ -125,7 +125,8 @@
         "SEVEN": "Ça vous va ?",
         "EIGHT": "Remplissez alors ce formulaire :",
         "FORM": {
-            "FULLNAME": "Nom complet",
+            "FIRST_NAME": "Prénom",
+            "LAST_NAME": "Nom",
             "EMAIL": "Courriel",
             "COMPANY": "Nom d'entreprise",
             "FOUND": "Comment vous nous avez trouvé ?", 
