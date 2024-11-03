@@ -17,7 +17,7 @@ Have questions or feedback? Feel free to reach out:
   * Twitter: Under construction
   * Instagram : Under construction
   * Facebook : Under construction
-  * Website: www.focusedresultsmedia.com
+  * Website: https://www.focusedresultsmedia.com
 
 
 ## Upcoming Tasks
