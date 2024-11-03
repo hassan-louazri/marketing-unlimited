@@ -44,8 +44,9 @@ Have questions or feedback? Feel free to reach out:
 ### Contact Form (SIGNED TO OMAR) / NOT DONE YET
 - Improve contact form style - DONE
 - Split full name field into two fields (first and last name) - DONE
-- Add email validation for email field (with regexp) - NEXT TARGET
-- Add country code for phone number field - NEXT TARGET
+- Add email validation for email field (with regexp) - DONE
+- Add country code for phone number field - DONE
 - Add suggestions as dropdown list for "how did you find us?" - NEXT TARGET
 - Add dropdown list selection for adspend field - DONE
 - Edit submit button style to look like main button (hero button) - SIGNED TO @hassan-louazri
+- Check validation before submiting the form (Sync Changes) - SIGNED TO @hassan-louazri
