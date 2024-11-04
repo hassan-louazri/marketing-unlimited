@@ -58,7 +58,8 @@
                 "TITLE": "Agence Locale",
                 "TEXT": "Nous ne sommes pas cachés dans un centre d'appel anonyme. Vous aurez toujours accès à nous quand vous en aurez besoin."
             }
-        }
+        },
+        "CTA": "Comment Travailler Avec Nous"
     },
     "CHOICE": {
         "TITLE": "Pourquoi nous?",
@@ -79,7 +80,8 @@
                 "TITLE": "Ou nous choisir",
                 "TEXT": "Nous avons tellement confiance en notre service que nous ne gagnons que si vous gagnez. Vous n'aurez pas à nous payer si nous ne tenons pas nos promesses. Nous pensons que c'est la base d'une bonne relation professionnelle."
             }
-        }
+        },
+        "CTA": "Faire Le Choix Correct"
     },
     "SERVICES": {
         "TITLE": "Nos Services",

@@ -12,6 +12,7 @@ import { LandingRoutingModule } from './landing-routing.module';
 import { NewsletterComponent } from './newsletter/newsletter.component';
 import { ServicesComponent } from './services/services.component';
 import { ContactComponent } from './contact/contact.component';
+import { ComponentsModule } from '../components/components.module';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -25,14 +26,15 @@ export function HttpLoaderFactory(http: HttpClient) {
     HomepageComponent,
     NewsletterComponent,
     ServicesComponent,
-    ContactComponent
+    ContactComponent,
   ],
   imports: [
     CommonModule,
     LandingRoutingModule,
     HttpClientModule,
     TranslateModule,
-    FormsModule
+    FormsModule,
+    ComponentsModule
   ]
 })
 export class LandingModule { }

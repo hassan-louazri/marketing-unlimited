@@ -18,73 +18,22 @@
     </div>
   </div>
   <div class="container card-container">
-    <div class="card offer-card">
+    <div class="card offer-card" *ngFor="let card of cards">
       <div class="card-img-holder">
         <img
           class="card-img-top"
-          src="../../../assets/images/free-time.jpeg"
+          [src]="card.img"
           alt="Card image cap"
         />
       </div>
       <div class="card-body">
         <div>
-          <span class="material-symbols-outlined">readiness_score</span>
-          <h3 class="card-title">{{ "OFFER.CARDS.ONE.TITLE" | translate }}</h3>
-          <p class="card-text">{{ "OFFER.CARDS.ONE.TEXT" | translate }}</p>
-        </div>
-      </div>
-    </div>
-    <div class="card offer-card">
-      <div class="card-img-holder">
-        <img
-          class="card-img-top"
-          src="../../../assets/images/conversions.jpg"
-          alt="Card image cap"
-        />
-      </div>
-      <div class="card-body">
-        <div>
-          <span class="material-symbols-outlined">groups</span>
-          <h3 class="card-title">{{ "OFFER.CARDS.TWO.TITLE" | translate }}</h3>
-          <p class="card-text">{{ "OFFER.CARDS.TWO.TEXT" | translate }}</p>
-        </div>
-      </div>
-    </div>
-    <div class="card offer-card">
-      <div class="card-img-holder">
-        <img
-          class="card-img-top"
-          src="../../../assets/images/professional.jpg"
-          alt="Card image cap"
-        />
-      </div>
-      <div class="card-body">
-        <div>
-          <span class="material-symbols-outlined">engineering</span>
-          <h3 class="card-title">
-            {{ "OFFER.CARDS.THREE.TITLE" | translate }}
-          </h3>
-          <p class="card-text">{{ "OFFER.CARDS.THREE.TEXT" | translate }}</p>
-        </div>
-      </div>
-    </div>
-    <div class="card offer-card">
-      <div class="card-img-holder">
-        <img
-          class="card-img-top"
-          src="../../../assets/images/agency.jpg"
-          alt="Card image cap"
-        />
-      </div>
-      <div class="card-body">
-        <div>
-          <span class="material-symbols-outlined">store</span>
-          <h3 class="card-title">
-            {{ "OFFER.CARDS.FOUR.TITLE" | translate }}
-          </h3>
-          <p class="card-text">{{ "OFFER.CARDS.FOUR.TEXT" | translate }}</p>
+          <span class="material-symbols-outlined">{{ card.icon }}</span>
+          <h3 class="card-title">{{ card.title | translate }}</h3>
+          <p class="card-text">{{ card.text | translate }}</p>
         </div>
       </div>
     </div>
   </div>
+  <cta-button [label]="'OFFER.CTA' | translate" type="button"></cta-button>
 </div>

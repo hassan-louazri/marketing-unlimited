@@ -6,6 +6,34 @@ import { AfterViewInit, Component, HostListener } from '@angular/core';
   styleUrls: ['./offer.component.scss']
 })
 export class OfferComponent implements AfterViewInit{
+
+  cards = [
+    {
+      img: '../../../assets/images/free-time.jpeg',
+      icon: 'readiness_score',
+      title: 'OFFER.CARDS.ONE.TITLE',
+      text: 'OFFER.CARDS.ONE.TEXT'
+    },
+    {
+      img: '../../../assets/images/conversions.jpg',
+      icon: 'groups',
+      title: 'OFFER.CARDS.TWO.TITLE',
+      text: 'OFFER.CARDS.TWO.TEXT'
+    },
+    {
+      img: '../../../assets/images/professional.jpg',
+      icon: 'engineering',
+      title: 'OFFER.CARDS.THREE.TITLE',
+      text: 'OFFER.CARDS.THREE.TEXT'
+    },
+    {
+      img: '../../../assets/images/agency.jpg',
+      icon: 'store',
+      title: 'OFFER.CARDS.FOUR.TITLE',
+      text: 'OFFER.CARDS.FOUR.TEXT'
+    },
+  ]
+
   isVisible: any;
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {

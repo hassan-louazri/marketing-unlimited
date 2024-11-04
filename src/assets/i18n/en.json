@@ -58,7 +58,8 @@
                 "TITLE": "Local Agency",
                 "TEXT": "We're not tucked away in some anonymous call center. You will always have access to us whenever you need."
             }
-        }
+        },
+        "CTA": "I Want In"
     },
     "CHOICE": {
         "TITLE": "Why Choose Us?",
@@ -79,7 +80,8 @@
                 "TITLE": "Or choose us",
                 "TEXT": "We're so confident in our service that we win only if you win. You won't have to pay us if we don't deliver. We believe it's the basis of a good business relationship"
             }
-        }
+        },
+        "CTA": "Make The Right Choice"
     },
     "SERVICES": {
         "TITLE": "Our Services",

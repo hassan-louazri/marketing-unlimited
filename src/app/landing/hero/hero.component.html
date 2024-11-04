@@ -17,6 +17,6 @@
       {{ "HERO.SUBHEAD.THREE" | translate }}
     </p>
     <br />
-    <a  routerLink="/contact" class="btn hero-button">{{ "HERO.HERO_BUTTON" | translate }}</a>
+    <cta-button [label]="'HERO.HERO_BUTTON' | translate " type="button" (click)="onClick()"></cta-button>
   </div>
 </div>

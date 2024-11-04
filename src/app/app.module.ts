@@ -22,7 +22,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ContactComponent
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
