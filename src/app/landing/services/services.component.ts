@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-services',
@@ -32,5 +33,11 @@ export class ServicesComponent {
       title: "SERVICES.WEBSITE.TITLE",
       description: "SERVICES.WEBSITE.DESCRIPTION"
     }
-  ]
+  ];
+
+  constructor(private router: Router) {}
+
+  onClick() {
+    this.router.navigate(['/contact']);
+  }
 }

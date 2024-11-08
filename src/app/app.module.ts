@@ -27,7 +27,7 @@ export function HttpLoaderFactory(http: HttpClient) {
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LandingModule,
+    // LandingModule,
     NgbModule,
     HttpClientModule,
     FormsModule,

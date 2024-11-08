@@ -3,12 +3,25 @@ h1 {
     font-weight: 700;
 }
 
+.title {
+    padding: 5rem;
+}
+
 .services {
     background-color: #fff;
     padding-bottom: 20px;
     .container {
         width: 70%;
     }
+}
+
+.services-intro {
+    h5 {
+        padding-bottom: 1.5rem;
+    }
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 5rem;
 }
 
 

@@ -1,11 +1,18 @@
 <div class="services">
     <div class="container">
-        <div class="title container text-center p-3 ">
+        <div class="title container text-center">
             <h1 class="m-0">{{ "SERVICES.TITLE" | translate}}</h1>
             <div class="line"></div>
         </div>
-    
-        <div class="d-flex justify-content-evenly flex-wrap">
+        <div class="services-intro">
+            <h5>{{ "SERVICES.SUBTITLE_ONE" | translate }}</h5>
+            <h5>{{ "SERVICES.SUBTITLE_TWO" | translate }}</h5> 
+            <h5>{{ "SERVICES.SUBTITLE_THREE" | translate }}</h5>
+            <h5>{{ "SERVICES.SUBTITLE_FOUR" | translate }}</h5> 
+            <h5>{{ "SERVICES.SUBTITLE_FIVE" | translate }}</h5>
+            <h5>{{ "SERVICES.SUBTITLE_SIX" | translate }}</h5>
+          </div>
+        <div class="text-center d-flex justify-content-evenly flex-wrap">
             <div class="card service-card" *ngFor="let service of services">
                 <div class="card-img-holder">
                     <img class="card-img-cap" [src]="service.image" alt="Card image cap" />
@@ -17,6 +24,7 @@
                     </div>
                 </div>
             </div>
+            <cta-button [label]="'SERVICES.CTA' | translate" type="button" (click)="onClick()"></cta-button>
         </div>
     </div>
 </div> 

@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, HostListener } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-offer',
@@ -35,6 +36,9 @@ export class OfferComponent implements AfterViewInit{
   ]
 
   isVisible: any;
+
+  constructor(private router: Router) {}
+
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
     const elements = document.querySelectorAll('.head-text') as NodeListOf<HTMLElement>;
@@ -53,5 +57,9 @@ export class OfferComponent implements AfterViewInit{
 
   ngAfterViewInit() {
     this.onWindowScroll(); // Call once on initialization
+  }
+
+  onClick() {
+    this.router.navigate(['/services']);
   }
 }

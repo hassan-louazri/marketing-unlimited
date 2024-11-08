@@ -8,14 +8,6 @@
 <div class="offer text-center">
   <div class="container mt-5">
     <h1 class="p-3 m-0">{{ "OFFER.TITLE" | translate }}</h1>
-    <div class="offer-intro">
-      <h5>{{ "OFFER.SUBTITLE_ONE" | translate }}</h5>
-      <h5>{{ "OFFER.SUBTITLE_TWO" | translate }}</h5> 
-      <h5>{{ "OFFER.SUBTITLE_THREE" | translate }}</h5>
-      <h5>{{ "OFFER.SUBTITLE_FOUR" | translate }}</h5> 
-      <h5>{{ "OFFER.SUBTITLE_FIVE" | translate }}</h5>
-      <h5>{{ "OFFER.SUBTITLE_SIX" | translate }}</h5>
-    </div>
   </div>
   <div class="container card-container">
     <div class="card offer-card" *ngFor="let card of cards">
@@ -35,5 +27,5 @@
       </div>
     </div>
   </div>
-  <cta-button [label]="'OFFER.CTA' | translate" type="button"></cta-button>
+  <cta-button [label]="'OFFER.CTA' | translate" type="button" (click)="onClick()"></cta-button>
 </div>

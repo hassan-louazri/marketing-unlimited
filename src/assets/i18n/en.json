@@ -5,6 +5,7 @@
     },
     "HEADER": {
         "HOME": "Home",
+        "SERVICES": "Services",
         "BLOG": "Blog",
         "DROPDOWN": "Language",
         "ENGLISH": "English",
@@ -35,12 +36,6 @@
             "TEXT_FOUR": "Our job is to help you launch your product or service into the market in the best way possible."
         },
         "TITLE": "What We Offer",
-        "SUBTITLE_ONE": "Most businesses waste thousands of dollars on ads that don't deliver.",
-        "SUBTITLE_TWO": "But it's not just money being wasted — every ineffective ad hurts their brand, damages their credibility, and drains their potential to grow.",
-        "SUBTITLE_THREE": "Imagine seeing your hard-earned dollars vanish while competitors capture your customers.",
-        "SUBTITLE_FOUR": "Don't fall into the same trap. Your investment should generate real results.",
-        "SUBTITLE_FIVE": "With our expert strategies, you will turn your advertising into a money making machine.",
-        "SUBTITLE_SIX": "Choosing us as partners will give you the following:",
         "CARDS": {
             "ONE": {
                 "TITLE": "More Free Time",
@@ -59,7 +54,7 @@
                 "TEXT": "We're not tucked away in some anonymous call center. You will always have access to us whenever you need."
             }
         },
-        "CTA": "I Want In"
+        "CTA": "Discover How We Can Help"
     },
     "CHOICE": {
         "TITLE": "Why Choose Us?",
@@ -80,18 +75,23 @@
                 "TITLE": "Or choose us",
                 "TEXT": "We're so confident in our service that we win only if you win. You won't have to pay us if we don't deliver. We believe it's the basis of a good business relationship"
             }
-        },
-        "CTA": "Make The Right Choice"
+        }
     },
     "SERVICES": {
-        "TITLE": "Our Services",
+        "TITLE": "What We Can Do For You",
+        "SUBTITLE_ONE": "Most businesses waste thousands of dollars on ads that don't deliver and can even damage the credibility and potential growth of the brand.",
+        "SUBTITLE_TWO": "Imagine seeing your hard-earned dollars vanish while competitors steal your customers from under your nose.",
+        "SUBTITLE_THREE": "Don't fall into the same trap. Your investment should generate real results.",
+        "SUBTITLE_FOUR": "With our expert strategies, you will turn your marketing into a money making machine.",
+        "SUBTITLE_FIVE": "Know that we DO NOT do STANDARD PACKAGES. Every business has unique needs and we tailor our strategy based on what you need and deserve.",
+        "SUBTITLE_SIX": "Having said that, our most common services consist of giving you the following:",
         "META": {
             "TITLE": "Social Media Advertising",
             "DESCRIPTION": "Meta's Ad platform allows hyper-local targeting. Everybody uses Meta's products (Facebook & Instragram) and your next client probably does too. Meta ads can be tailored to increase conversions, drive traffic and increase sales, making it the perfect solution for a local business."
         },
         "CONTENT": {
             "TITLE": "Content Marketing",
-            "DESCRIPTION": "Writing is a superpower. And we will help you harness that power by creating relevant content tailored to your prospects. Writing builds authority, improves traffic and promotes engagment with your target audience. Be it blog posts, video scripts or ad copy, we will deliver high quality content that positions you as the local authority."
+            "DESCRIPTION": "Writing is a superpower. And we will help you harness that power by creating relevant content tailored to your prospects. Writing builds authority, improves traffic and promotes engagment with your target audience. Be it blog posts, video scripts or advertising, we will deliver high quality content that positions you as the local authority."
         },
         "EMAIL": {
             "TITLE": "Email Marketing",
@@ -104,7 +104,8 @@
         "WEBSITE": {
             "TITLE": "Landing Page Creation & Review",
             "DESCRIPTION": "A landing page is where all your prospects converge to discover your service. A landing page that grabs and retains attention is crucial to increase sales and improve a business. If you already have one, we will go through it and see where we can improve it."
-        }
+        },
+        "CTA": "Let's Get To Work"
     },
     "NEWSLETTER":{
         "HEADLINE":"The Marketing Newsletter",

@@ -5,6 +5,7 @@
     },
     "HEADER": {
         "HOME": "Accueil",
+        "SERVICES": "Services",
         "BLOG": "Blog",
         "DROPDOWN": "Langue",
         "ENGLISH": "Anglais",
@@ -35,12 +36,6 @@
             "TEXT_FOUR": "Notre travail consiste à vous aider à lancer votre produit ou service sur le marché de la meilleure façon possible."
         },
         "TITLE": "Ce que nous offrons",
-        "SUBTITLE_ONE": "La plupart des entrepreneurs gaspillent des milliers d'euros en publicités qui n'apportent rien.",
-        "SUBTITLE_TWO": "Mais ce n'est pas seulement de l'argent qui est gaspillé : chaque publicité inefficace nuit à la marque, à la crédibilité et au potentiel de croissance de l'entreprise.",
-        "SUBTITLE_THREE": "Imaginez que vos revenus durement gagnés s'envolent alors que vos concurrents s'emparent de vos clients.",
-        "SUBTITLE_FOUR": "Ne tombez pas dans le même piège. Votre investissement doit générer des résultats concrets.",
-        "SUBTITLE_FIVE": "Grâce à nos stratégies spécialisées, vous transformerez vos publicités en une machine à générer des gains.",
-        "SUBTITLE_SIX": "En nous choisissant comme partenaires, vous bénéficierez des avantages suivants :",
         "CARDS": {
             "ONE": {
                 "TITLE": "Plus de Temps Libre",
@@ -59,7 +54,7 @@
                 "TEXT": "Nous ne sommes pas cachés dans un centre d'appel anonyme. Vous aurez toujours accès à nous quand vous en aurez besoin."
             }
         },
-        "CTA": "Comment Travailler Avec Nous"
+        "CTA": "Decouvrir Comment Nous Pouvons Vous Aider"
     },
     "CHOICE": {
         "TITLE": "Pourquoi nous?",
@@ -80,11 +75,16 @@
                 "TITLE": "Ou nous choisir",
                 "TEXT": "Nous avons tellement confiance en notre service que nous ne gagnons que si vous gagnez. Vous n'aurez pas à nous payer si nous ne tenons pas nos promesses. Nous pensons que c'est la base d'une bonne relation professionnelle."
             }
-        },
-        "CTA": "Faire Le Choix Correct"
+        }
     },
     "SERVICES": {
-        "TITLE": "Nos Services",
+        "TITLE": "Comment nous pouvons vous servir",
+        "SUBTITLE_ONE": "La plupart des entreprises gaspillent des milliers d'euros dans des publicités qui n'apportent rien et peuvent même nuire à la crédibilité et à la croissance de la marque.",
+        "SUBTITLE_TWO": "Imaginez que vos revenus durement gagnés s'envolent alors que vos concurrents vous volent vos clients sous votre nez.",
+        "SUBTITLE_THREE": "Ne tombez pas dans le même piège. Votre investissement doit générer des résultats concrets.",
+        "SUBTITLE_FOUR": "Grâce à nos stratégies spécialisées, vous transformerez votre marketing en une machine à gagner des gains.",
+        "SUBTITLE_FIVE": "Sachez que nous NE proposons PAS de forfaits STANDARDS. Chaque entreprise a des besoins uniques et nous adaptons notre stratégie en fonction de ce dont vous avez besoin et de ce que vous méritez.",
+        "SUBTITLE_SIX": "Cela dit, nos services les plus courants consistent à vous fournir les éléments suivants :",
         "META": {
             "TITLE": "Publicité Sur Médias Sociaux",
             "DESCRIPTION": "Meta's Ad platform allows hyper-local targeting. Everybody uses Meta's products (Facebook & Instragram) and your next client probably does too. Meta ads can be tailored to increase conversions, drive traffic and increase sales, making it the perfect solution for a local business."
@@ -104,7 +104,8 @@
         "WEBSITE": {
             "TITLE": "Création et Révision Des Sites Web",
             "DESCRIPTION": "A landing page is where all your prospects converge to discover your service. A landing page that grabs and retains attention is crucil to increase sales and improve a business. If you already have one, we will go through it and see where we can improve it."
-        }
+        },
+        "CTA": "Devenir Vainceur"
     },
     "NEWSLETTER":{
         "HEADLINE" : "La Newsletter du Marketing",

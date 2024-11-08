@@ -30,6 +30,7 @@ Have questions or feedback? Feel free to reach out:
 - Move all functionality into services
 
 ### Blog improvements (SIGNED TO OMAR) / NOT DONE YET
+- A dd buttons to redirect to blog
 - Improve blog list style 
 - Improve blog post style
 - Add action steps for readers to improve orientation and user experience
