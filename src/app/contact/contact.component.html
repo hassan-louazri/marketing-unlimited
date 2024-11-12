@@ -133,7 +133,7 @@
                       </option>
                     </select>
                   
-                    <span [ngClass]="'flag flag-' + selectedCountryFlag"></span>
+                    <!-- <span [ngClass]="'flag flag-' + selectedCountryFlag"></span> -->
                   
                     <input type="tel" class="custom_phone_class_input" name="phone" [placeholder]="'CONTACT.FORM.PHONE' | translate"
                            [value]="selectedCountryCode + ' '" (keypress)="($event.charCode >= 48 && $event.charCode < 58)">
@@ -181,7 +181,6 @@
             </form>
          </div>
       </div>
-    
     
 </div>
 
